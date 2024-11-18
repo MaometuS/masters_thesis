@@ -1,0 +1,119 @@
+\relax 
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Two-Stage Pre-training Method for Medical Vision and Language Task}{17}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chapter:ch3}{{3}{17}{}{}{}}
+\citation{chen2022align}
+\citation{chen2023towards}
+\citation{moon2022multi}
+\citation{yan2022clinical}
+\citation{chen2022multi}
+\citation{Wang2022MedCLIPCL}
+\citation{subramanian-2020-medicat}
+\citation{li2021align}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Problems in Medical Vision-Language Pre-training}{18}{}\protected@file@percent }
+\newlabel{Problems}{{3.1}{18}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Shortage of Data}{18}{}\protected@file@percent }
+\newlabel{Shortage}{{3.1.1}{18}{}{}{}}
+\citation{chen2022c}
+\citation{chen2022c}
+\citation{chen2022c}
+\citation{chen2022c}
+\citation{chen2022c}
+\citation{chen2022c}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Model's Lack of Organ Knowledge}{19}{}\protected@file@percent }
+\newlabel{Lackknowledge}{{3.1.2}{19}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Two reasons behind the model's lack of organ knowledge. (a) clearly illustrates four abdominal images, each showcasing the consistent presence of organs such as the liver, spleen, and kidneys \cite  {chen2022c}. In (b), the abdomen is illustrated, and the corresponding caption specifically describes the liver while disregarding the other organs present. }}{20}{}\protected@file@percent }
+\newlabel{fig:reasonsOfProblem}{{3.1}{20}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Challenge in the application of vision-language pre-training in the medical domain \cite  {chen2022c}: The model struggles to identify the specific regions (such as the green, red, yellow, or purple areas) that represent the liver in the visual representation. }}{21}{}\protected@file@percent }
+\newlabel{fig:probelm}{{3.2}{21}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Challenge in the application of vision-language pre-training in the medical domain \cite  {chen2022c}, especially in masked language modeling: The model encounters challenges in tasks such as filling masked words during pre-training due to its limited knowledge of the visual appearance of healthy organs. Despite being provided with choices such as liver, spleen, or kidneys, accurately identifying the organ in masked words remains a difficult task. }}{22}{}\protected@file@percent }
+\newlabel{fig:probelmMLM}{{3.3}{22}{}{}{}}
+\citation{chen2022multi}
+\citation{chen2022align}
+\citation{ronneberger2015u}
+\citation{kavur2021chaos}
+\citation{kavur2021chaos}
+\citation{kavur2021chaos}
+\citation{kavur2021chaos}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Proposed Method}{23}{}\protected@file@percent }
+\newlabel{Method}{{3.2}{23}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces The pre-training process comprises two stages: (a) stage one focuses on a segmentation task \cite  {kavur2021chaos}, while (b) stage two adheres to the original pre-training methodology. }}{24}{}\protected@file@percent }
+\newlabel{fig:proposedPretrainStep}{{3.4}{24}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Medical image segmentation \cite  {kavur2021chaos} }}{24}{}\protected@file@percent }
+\newlabel{fig:segment}{{3.5}{24}{}{}{}}
+\citation{Dou_2022_CVPR}
+\citation{kavur2021chaos}
+\citation{kavur2021chaos}
+\citation{dosovitskiy2020vit}
+\citation{radford2021learning}
+\citation{He_2016_CVPR}
+\citation{Liu_2021_ICCV}
+\citation{zhuang-etal-2021-robustly}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Model Architecture}{25}{}\protected@file@percent }
+\newlabel{Architecture}{{3.3}{25}{}{}{}}
+\citation{vaswani2017attention}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Overview of the architecture of the proposed method. The component of the image is from paper \cite  {kavur2021chaos}. }}{26}{}\protected@file@percent }
+\newlabel{fig:modelArchitecture}{{3.6}{26}{}{}{}}
+\citation{ronneberger2015u}
+\citation{chen2022align}
+\citation{chen2022multi}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Training Pipeline}{28}{}\protected@file@percent }
+\newlabel{training}{{3.4}{28}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Pre-training Stage One}{28}{}\protected@file@percent }
+\newlabel{Stageone}{{3.4.1}{28}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparative of training pipelines: Previous Work (a) versus Proposed Method (b) }}{29}{}\protected@file@percent }
+\newlabel{fig:compare}{{3.7}{29}{}{}{}}
+\citation{chen2022align}
+\citation{chen2022multi}
+\citation{kavur2021chaos}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Pre-training Stage Two}{30}{}\protected@file@percent }
+\newlabel{Stagetwo}{{3.4.2}{30}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Datasets}{30}{}\protected@file@percent }
+\newlabel{Dataset}{{3.5}{30}{}{}{}}
+\citation{Pelka2018RadiologyOI}
+\citation{subramanian-2020-medicat}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Example images from the CHAOS dataset. It shows CT and MRI images with the liver highlighted in red, right kidney in dark blue, left kidney in light blue, and spleen in yellow. }}{31}{}\protected@file@percent }
+\newlabel{fig:chaos}{{3.8}{31}{}{}{}}
+\citation{liu2021slake}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Example images from the ROCO dataset }}{32}{}\protected@file@percent }
+\newlabel{fig:roco}{{3.9}{32}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces An example image and its corresponding caption are obtained from the ROCO dataset. During the pre-training phase, only the images and their corresponding captions are employed. }}{33}{}\protected@file@percent }
+\newlabel{fig:roco2}{{3.10}{33}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Example images and corresponding captions from the MedICat dataset }}{33}{}\protected@file@percent }
+\newlabel{fig:medicat}{{3.11}{33}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces An example from the SLAKE dataset is presented. It is worth noting that only English language is used during training. }}{34}{}\protected@file@percent }
+\newlabel{fig:slake}{{3.12}{34}{}{}{}}
+\citation{kavur2021chaos}
+\citation{kavur2021chaos}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Generate Caption Dataset for Pre-training Stage One}{35}{}\protected@file@percent }
+\newlabel{Gencaption}{{3.6}{35}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Medical image segmentation with corresponding generated captions. The component of the image is from paper \cite  {kavur2021chaos}. }}{36}{}\protected@file@percent }
+\newlabel{fig:genCaption}{{3.13}{36}{}{}{}}
+\@setckpt{Chapter_3/Chapter_3}{
+\setcounter{page}{37}
+\setcounter{equation}{0}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{3}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{13}
+\setcounter{table}{0}
+\setcounter{float@type}{4}
+\setcounter{caption@flags}{2}
+\setcounter{continuedfloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{parentequation}{0}
+}

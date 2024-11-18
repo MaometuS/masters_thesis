@@ -1,0 +1,34 @@
+\contentsline {section}{Table of Contents}{i}{}%
+\contentsline {section}{List of Figures}{iii}{}%
+\contentsline {section}{List of Tables}{v}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {chapter}{\numberline {2}Related Work}{7}{}%
+\contentsline {section}{\numberline {2.1}Transformer Attention}{8}{}%
+\contentsline {subsection}{\numberline {2.1.1}Vision Transformer}{9}{}%
+\contentsline {subsection}{\numberline {2.1.2}Language Transformer}{11}{}%
+\contentsline {section}{\numberline {2.2}Vision and Language Pre-Training}{12}{}%
+\contentsline {section}{\numberline {2.3}Visual Question Answering}{15}{}%
+\contentsline {section}{\numberline {2.4}Medical Visual Question Answering}{16}{}%
+\contentsline {chapter}{\numberline {3}Two-Stage Pre-training Method for Medical Vision and Language Task}{17}{}%
+\contentsline {section}{\numberline {3.1}Problems in Medical Vision-Language Pre-training}{18}{}%
+\contentsline {subsection}{\numberline {3.1.1}Shortage of Data}{18}{}%
+\contentsline {subsection}{\numberline {3.1.2}Model's Lack of Organ Knowledge}{19}{}%
+\contentsline {section}{\numberline {3.2}Proposed Method}{23}{}%
+\contentsline {section}{\numberline {3.3}Model Architecture}{25}{}%
+\contentsline {section}{\numberline {3.4}Training Pipeline}{28}{}%
+\contentsline {subsection}{\numberline {3.4.1}Pre-training Stage One}{28}{}%
+\contentsline {subsection}{\numberline {3.4.2}Pre-training Stage Two}{30}{}%
+\contentsline {section}{\numberline {3.5}Datasets}{30}{}%
+\contentsline {section}{\numberline {3.6}Generate Caption Dataset for Pre-training Stage One}{35}{}%
+\contentsline {chapter}{\numberline {4}Experiments}{37}{}%
+\contentsline {section}{\numberline {4.1}Effectiveness of Two-stage Pre-training}{38}{}%
+\contentsline {subsection}{\numberline {4.1.1}Experimental Setup}{38}{}%
+\contentsline {subsection}{\numberline {4.1.2}Results}{39}{}%
+\contentsline {section}{\numberline {4.2}Performance of Different Image Encoder Configurations}{41}{}%
+\contentsline {section}{\numberline {4.3}Comparison with Previous Works}{42}{}%
+\contentsline {section}{\numberline {4.4}Qualitative Examples}{43}{}%
+\contentsline {chapter}{\numberline {5}Conclusions and Future Improvements}{49}{}%
+\contentsline {section}{\numberline {5.1}Conclusions}{49}{}%
+\contentsline {section}{\numberline {5.2}Future Improvements}{50}{}%
+\contentsline {chapter}{Bibliography}{53}{}%
+\contentsline {chapter}{Acknowledgements}{63}{}%

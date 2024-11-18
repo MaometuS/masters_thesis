@@ -1,0 +1,120 @@
+%%%%% Definition %%%%%%
+\def\@makechapterhead#1{ \vspace*{40pt} { \parindent 0pt \centering
+ \ifnum \c@secnumdepth >\m@ne 
+{\LARGE\bfseries \prechaptername{\thechapter}\postchaptername} \par
+ \vskip 20pt \fi \huge \bf #1\par
+ \nobreak \vskip 40pt }
+ \thispagestyle{empty}
+}
+\def\abstract{
+ \clearpage
+ \thispagestyle{empty}
+ \vspace*{10pt}{ \parindent 0pt \centering
+  \ifnum \c@secnumdepth >\m@ne 
+  {\bfseries\huge Abstract\hspace{.10in}} \par
+   \vskip 20pt \fi \huge \bf \par
+   \nobreak \vskip 20pt}
+}
+\def\tableofcontents{%
+ \@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+ \fi\chapter*{\centering Ú }
+ \@starttoc{toc}\if@restonecol\twocolumn\fi
+}
+\def\thebibliography{
+ \chapter*{\centering Ql¶£}
+ \markright{Ql¶£}
+ \thispagestyle{empty}
+ \list{[\arabic{enumi}]}{\usecounter{enumi}}
+ \def\newblock{\hskip .11em plus .33em minus .07em}
+ \sloppy
+ \sfcode`\.=1000\relax
+ \addcontentsline{toc}{chapter}{Ql¶£}
+}
+\let\endthebibliography=\endlist
+
+\def\acknowledgement{
+ \clearpage
+ \thispagestyle{empty}
+ \addcontentsline{toc}{chapter}{Ó«}
+ \vspace*{10pt}{ \parindent 0pt \centering
+  \ifnum \c@secnumdepth >\m@ne 
+  {\bfseries\huge Ó « \hspace{.10in}} \par
+   \vskip 20pt \fi \huge \bf \par
+   \nobreak \vskip 20pt}
+}
+
+\def\appendix{
+ \clearpage
+ \chapter*{\centering t^}
+ \markright{t^}
+ \thispagestyle{empty}
+ \addcontentsline{toc}{chapter}{t^}
+ \setcounter{section}{0}
+ \renewcommand{\thesection}{A.\arabic{section}}
+ \renewcommand{\theequation}{A.\arabic{equation}}
+% \vspace*{10pt} { \parindent 0pt \centering
+%  \ifnum \c@secnumdepth >\m@ne 
+%  {\bfseries\huge t ^ \hspace{.10in}} \par
+%   \vskip 20pt \fi \huge \bf \par
+%   \nobreak \vskip 20pt}
+}
+
+%%%%% Renewcommand %%%%%
+\renewcommand{\indent}{\hspace*{1em}}
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\renewcommand{\bibname}{Ql¶£}
+\renewcommand{\figurename}{}}
+\renewcommand{\tablename}{\}
+
+%%%%% Newcommand %%%%%
+\newcounter{assumption}
+\newcommand{\assumption}{%
+ \addtocounter{assumption}{1}%
+ \textbf{[¼è \theassumption]}\hspace{1em}}
+\newcounter{definition}[chapter]
+\newcommand{\definition}{%
+ \addtocounter{definition}{1}%
+ \textbf{[è` \thechapter.\thedefinition]}\hspace{1em}}
+\newcounter{proposition}[chapter]
+\newcommand{\proposition}{%
+ \addtocounter{proposition}{1}%
+ \textbf{[½è \thechapter.\theproposition]}\hspace{1em}}
+\newcounter{theorem}[chapter]
+\newcommand{\theorem}{%
+ \addtocounter{theorem}{1}%
+ \textbf{[è \thechapter.\thetheorem]}\hspace{1em}}
+\newcounter{proof}
+\newcommand{\proof}{%
+ \addtocounter{proof}{1}%
+ \textbf{(Ø¾)}\hspace{1em}}
+\newcounter{lemma}[chapter]
+\newcommand{\lemma}{%
+ \addtocounter{lemma}{1}%
+ \textbf{[âè \thechapter.\thelemma]}\hspace{1em}}
+\newcounter{corollary}[chapter]
+\newcommand{\corollary}{%
+ \addtocounter{corollary}{1}%
+ \textbf{[n \thechapter.\thecorollary]}\hspace{1em}}
+
+
+%%%%% LAYOUT PARAMETER %%%%%
+\setlength{\topmargin}{-1cm}
+\setlength{\headheight}{1cm}
+\setlength{\headsep}{1cm}
+\setlength{\oddsidemargin}{1cm}
+\setlength{\evensidemargin}{1cm}
+\setlength{\footskip}{1cm}
+\setlength{\textwidth}{15cm}
+\setlength{\textheight}{23.5cm}
+\setlength{\parindent}{5mm}
+\setlength{\topskip}{1cm}
+\setlength{\abovedisplayskip}{3em}
+\setlength{\belowdisplayskip}{5em}
+\renewcommand{\baselinestretch}{1.3}
+\pagestyle{plain}
+
+
+%%%%% KANJI SKIP %%%%%
+\kanjiskip=.8pt plus .3pt minus .3pt%	\noautospacing or \autospacing 
+\xkanjiskip=.25zw plus 1pt minus 1pt%	default \noautoxspacing or \autoxspacing
+
