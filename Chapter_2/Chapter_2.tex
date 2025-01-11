@@ -46,20 +46,38 @@ Wide Residual Networks are enhancement upon the regular ResNet architecture, whi
 \section{Unsupervised Learning}
 \label{usupervised learning}
 
-To generate feature spaces suitable for industrial anomaly detection tasks, it is beneficial to use multiple available, large scale, unlabeled image datasets. One of the many Unsupervised Learning techniques will allows to effectively extract features from unlabeled datasets.
+To generate feature spaces suitable for industrial anomaly detection tasks, it is beneficial to use multiple available, large scale, unlabeled image datasets. One of the many Unsupervised Learning techniques will allow us to effectively extract features from unlabeled datasets. Unsupervised Learning refers to the variant of machine learning algorithms where the models is trained to learn patterns in the data itself, instead of overt output labels like in supervised learning. Unsupervised Learning models in their process leverage such architectures as autoencoders which work by first transforming the data into a compressed representation and then learning to restore the input, generative adversarial networks which train two competing models discriminator and a generator, clusterization algorithms which separates the input into clusters using algorithms like k-NN, contrasive learning which learns features by comparing input data. 
 
 \subsection{Self-supervised Learning}
 \label{self-supervised learning}
 
+Self-supervised learning are a subset of unsupervised learning models in that, they also designed to learn from unlabeled data but unlike unsupervised learning models that learn representation from the data directly, self-supervised learning first assigns "labels" or "tasks" on unlabeled data and learns to fit the generated labels or complete the generated tasks in order to extract hidden structures and patterns from the provided input. Therefore, self-supervised learning serves as the middle ground between unsupervised and supervised learning, in an attempt to leverage the advantages of supervised learning in an unsupervised setting. Over the recent years, self-supervised learning models proved to be very efficient method of unsupervised learning, allowing to train models that can perform with high accuracy on multiple tasks after the task specific fine-tuning process.
+
+As have been stated the key component of self-supervised learning is the generation of assisting tasks based on the training data. An example for the types of tasks that might be generated can be, predicting various transformations applied on the image or drawing in the random missing patches of the image. By training to accomplish this tasks, self-supervised model learn the patterns that inherently exist in the data, extracting valuable features in the process. This mode of learning can be utilized to generate feature spaces suitable for the task of industrial anomaly detection from large scale unlabeled datasets. Indeed, we use one of the most robust self-supervised learning models DINO in this work.
+
 \subsection{DINO model}
 \label{dino}
 
+DINO(from distillation with no labels) is a robust self-supervised learning model that was introduced by Facebook AI team that uses enhanced knowledge distillation pipeline to learn useful representations from an unlabeled large image datasets. The model achieves high accuracy on top-1 classification task on the ImageNet dataset, specifically 79.1 percent when training the model ViT-S/14 and higher 82.1\% when used with the ViT-B/14 model. DINO models ability to train both Vision Transformer and CNN based model and its high efficiency makes the model an excellent choice for the purposes of this thesis.
+
+In its training process DINO utilizes the teacher-student architecture where student is trained to align its output to the output of the teacher model. Both student and teacher models trained using the same model architecture but using different parameters. The key point of the DINO model is that the teacher model is trained using the EMA - exponential moving average of the student model in order to guarantee the stability during training. Training process itself consists of passing an input image with random transformations picked from a constant set of transformations, to teacher and student models and adjusting the student models output to the teacher models output using cross-entropy loss function. During such a training process, the student model learn invariant and meaningful features from the input.
+
+%input dino graphicss
 
 \section{Industrial Anomaly Detection}
 \label{iad}
 
+Industrial Anomaly Detection has become the irreplaceable part of various manufacturing processes, allowing to detect any deviations from standards of manufacturing and preventing defective products from potentially reaching the output. Anomalies of varying kind expected to happen in every industrial processes due to different reasons like, wear and tear, software errors and malfunction of devices. Industrial Anomaly Detection methods allow us monitor the manufacturing pipeline and to anticipate such defects, followed with swift corrections. This allows for increased stability of manufacturing, improved quality control, mediating costly defects, minimizing downtime and enhancing efficiency.
+
+Contemporary Industrial Anomaly Detection methods heavily rely on deep learning computer vision models. Variety of computer vision models like convolutional neural networks, vision transformers and autoencoders can be utilized to efficiently implement industrial anomaly detection in real use case scenarios where data from visual sensors such as cameras. These models posses the ability to learn complex visual representation from high-dimensional imagery data, allowing IAD tasks to be performed with high accuracy and reliability. Over the recent years the field of Industrail Anomaly Detection witnessed a lot of improvements, especially in the field of Unsupervised Industrial Anomaly Detection where there is a scarcity of anomalous data. 
+
 \subsection{Unsupervised Industrial Anomaly Detection}
 \label{unsupervised iad}
+
+Unsupervised Industrial Anomaly Detection leverage unsupervised deep learning techniques in order to learn any deviations from the nominal patterns it the provided input. In IAD field unsupervised learning is vital because labeled anomalous images are extremely scarce or non-existent. There are multiple types of architectures that can be engaged to implement unsupervisded iad models, including architectures like autoencoders, clustering and various statistical techniques are common to be used. As an example, PatchCore model uses memory-bank approach opting to save features extracted by pre-trained backbone model with some aggregation operations while on the inference performing kNN over the saved features and extracted features of the test sample. Another model called SimpleNet trains a discriminator with synthetically generated anomalies on the features of the nominal samples. There are also reconstruction based models like RealNet which utilized auto-encoders on the layers of the pre-trained feature extractor model. In this thesis, we use these three models to test different feature spaces on.
+
+\subsection{SimpleNet}
+\label{simplenet}
 
 
 \subsection{PatchCore}

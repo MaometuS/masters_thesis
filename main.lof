@@ -3,33 +3,6 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Pre-training followed by finetuning: The approach involves pre-training the model on a large-scale medical image-caption dataset \cite {Pelka2018RadiologyOI}, and subsequently finetuning it specifically for the task of medical visual question answering \cite {liu2021slake}. }}{3}{}%
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Comparing model learning to medical student training }}{4}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Transformer architecture \cite {vaswani2017attention}}}{10}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Attention mechanisms \cite {vaswani2017attention}: (a) Scaled dot-product attention, (b) Multi-head attention}}{11}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Masked language modeling \cite {Dou_2022_CVPR}}}{13}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Image-text matching \cite {Dou_2022_CVPR} involves determining whether an image and its corresponding caption are a match or not. The top image represents a positive pair, indicating a matching image and caption. On the other hand, the bottom image represents a negative pair, indicating a non-matching image and caption.}}{14}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces The image-text matching head \cite {Dou_2022_CVPR} consists of two fully connected layers in its architecture.}}{14}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Visual question answering \cite {liu2022dpt} is a task in which a model takes images and corresponding questions as input and generates accurate answers as output. }}{16}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Two reasons behind the model's lack of organ knowledge. (a) clearly illustrates four abdominal images, each showcasing the consistent presence of organs such as the liver, spleen, and kidneys \cite {chen2022c}. In (b), the abdomen is illustrated, and the corresponding caption specifically describes the liver while disregarding the other organs present. }}{20}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Challenge in the application of vision-language pre-training in the medical domain \cite {chen2022c}: The model struggles to identify the specific regions (such as the green, red, yellow, or purple areas) that represent the liver in the visual representation. }}{21}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Challenge in the application of vision-language pre-training in the medical domain \cite {chen2022c}, especially in masked language modeling: The model encounters challenges in tasks such as filling masked words during pre-training due to its limited knowledge of the visual appearance of healthy organs. Despite being provided with choices such as liver, spleen, or kidneys, accurately identifying the organ in masked words remains a difficult task. }}{22}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces The pre-training process comprises two stages: (a) stage one focuses on a segmentation task \cite {kavur2021chaos}, while (b) stage two adheres to the original pre-training methodology. }}{24}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Medical image segmentation \cite {kavur2021chaos} }}{24}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Overview of the architecture of the proposed method. The component of the image is from paper \cite {kavur2021chaos}. }}{26}{}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparative of training pipelines: Previous Work (a) versus Proposed Method (b) }}{29}{}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Example images from the CHAOS dataset. It shows CT and MRI images with the liver highlighted in red, right kidney in dark blue, left kidney in light blue, and spleen in yellow. }}{31}{}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Example images from the ROCO dataset }}{32}{}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces An example image and its corresponding caption are obtained from the ROCO dataset. During the pre-training phase, only the images and their corresponding captions are employed. }}{33}{}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Example images and corresponding captions from the MedICat dataset }}{33}{}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces An example from the SLAKE dataset is presented. It is worth noting that only English language is used during training. }}{34}{}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Medical image segmentation with corresponding generated captions. The component of the image is from paper \cite {kavur2021chaos}. }}{36}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. }}{45}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. }}{45}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. }}{46}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. }}{46}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. }}{47}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. }}{47}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. The red color highlights the failure cases. }}{48}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Qualitative examples from our method on the SLAKE test splits. The red color highlights the failure cases. }}{48}{}%
 \addvspace {10\p@ }

@@ -3,15 +3,8 @@
 
 \section{Conclusions}
 
-In this thesis, we addressed the limitations of previous medical vision-language pre-training approaches, specifically the lack of basic organ knowledge in the models. To overcome this issue, we have proposed a two-stage pre-training method.
-
-By incorporating an initial stage of image segmentation pre-training, our approach ensures that the model acquires fundamental organ knowledge before engaging in the original vision-language pre-training. This enables the model to acquire a better understanding of the relationship between images and textual information during the vision-language pre-training (stage two), resulting in improved performance in medical visual question answering tasks.
-
-The results obtained from our experiments demonstrate the superiority of the two-stage pre-training method compared to the one-stage pre-training method. This highlights the importance of incorporating organ-specific information during pre-training to enhance the model's performance in medical vision-language tasks. Overall, our findings contribute to improving the effectiveness of vision-language models in the medical domain.
+TBW
 
 \section{Future Improvements}
-In the domain of vision-language pre-training, the performance of models often shows a correlation with the scale of the pre-training dataset. Increasing the number of image-caption pairs used for pre-training can be a promising direction to further enhance the model's performance in medical downstream tasks. Increasing the training data can help the model better capture complex relationships between images and their associated language, leading to improved generalization and performance across various medical vision tasks Exploring strategies to collect and curate such large-scale datasets in the medical domain would be valuable for future research.
 
-Another important avenue for future work is to address the challenge of catastrophic forgetting during the transition from the first-stage to the second-stage of pre-training. During the second-stage pre-training phase, the model may forget the essential organ knowledge acquired in the first-stage pre-training while focusing on learning new representations in the second-stage pre-training. To mitigate this issue, incorporating methods such as Adapters \cite{houlsby2019parameter} can be beneficial. Adapters enable the model to fine-tune specific knowledge without overwriting previously learned information. By introducing adapters between transition stages of pre-training, the model can effectively preserve the learned organ knowledge while continuing to adapt and specialize in the second-stage pre-training. Investigating methods to optimize the transition process would be a promising avenue for future research in medical vision-language pre-training.
-
-Lastly, an interesting avenue to explore would be addressing the model's lack of knowledge about diseases, which becomes evident from the qualitative results. This limitation is understandable, considering that the pre-training stage one focuses primarily on organ knowledge through segmentation. To improve the model's understanding of diseases, a potential direction could involve incorporating disease segmentation as an input during training. By integrating disease-specific information into the pre-training process, we may enhance the model's ability to handle disease-related questions in the medical visual question answering task.
+TBW

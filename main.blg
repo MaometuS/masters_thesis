@@ -11,58 +11,44 @@ A level-1 auxiliary file: References/thesis_ref.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: Acknowledge/Acknowledgments.aux
 Database file #1: References/references.bib
-Name 1 in "Sanjay Subramanian, Lucy Lu Wang, Sachin Mehta, Ben Bogin, Madeleine van Zuylen, Sravanthi Parasa, Sameer Singh, Matt Gardner, and Hannaneh Hajishirzi" has a comma at the end for entry subramanian-2020-medicat
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Sanjay Subramanian, Lucy Lu Wang, Sachin Mehta, Ben Bogin, Madeleine van Zuylen, Sravanthi Parasa, Sameer Singh, Matt Gardner, and Hannaneh Hajishirzi" for entry subramanian-2020-medicat
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Sanjay Subramanian, Lucy Lu Wang, Sachin Mehta, Ben Bogin, Madeleine van Zuylen, Sravanthi Parasa, Sameer Singh, Matt Gardner, and Hannaneh Hajishirzi" for entry subramanian-2020-medicat
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Sanjay Subramanian, Lucy Lu Wang, Sachin Mehta, Ben Bogin, Madeleine van Zuylen, Sravanthi Parasa, Sameer Singh, Matt Gardner, and Hannaneh Hajishirzi" for entry subramanian-2020-medicat
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Sanjay Subramanian, Lucy Lu Wang, Sachin Mehta, Ben Bogin, Madeleine van Zuylen, Sravanthi Parasa, Sameer Singh, Matt Gardner, and Hannaneh Hajishirzi" for entry subramanian-2020-medicat
-while executing---line 944 of file unsrt.bst
-Too many commas in name 1 of "Sanjay Subramanian, Lucy Lu Wang, Sachin Mehta, Ben Bogin, Madeleine van Zuylen, Sravanthi Parasa, Sameer Singh, Matt Gardner, and Hannaneh Hajishirzi" for entry subramanian-2020-medicat
-while executing---line 944 of file unsrt.bst
-Warning--empty journal in paszke2017automatic
-You've used 47 entries,
+You've used 2 entries,
             1791 wiz_defined-function locations,
-            688 strings with 15976 characters,
-and the built_in function-call counts, 16522 in all, are:
-= -- 1428
-> -- 931
-< -- 29
-+ -- 326
-- -- 279
-* -- 1051
-:= -- 2399
-add.period$ -- 156
-call.type$ -- 47
-change.case$ -- 48
+            466 strings with 4207 characters,
+and the built_in function-call counts, 700 in all, are:
+= -- 58
+> -- 37
+< -- 1
++ -- 13
+- -- 11
+* -- 44
+:= -- 106
+add.period$ -- 7
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 815
-empty$ -- 1454
-format.name$ -- 279
-if$ -- 3880
+cite$ -- 2
+duplicate$ -- 35
+empty$ -- 67
+format.name$ -- 11
+if$ -- 163
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 46
-newline$ -- 238
-num.names$ -- 47
-pop$ -- 245
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 553
+skip$ -- 20
 stack$ -- 0
-substring$ -- 1067
-swap$ -- 383
-text.length$ -- 29
+substring$ -- 40
+swap$ -- 15
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 129
-width$ -- 49
-write$ -- 517
-(There were 6 error messages)
+warning$ -- 0
+while$ -- 5
+width$ -- 3
+write$ -- 24

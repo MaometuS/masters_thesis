@@ -2,9 +2,4 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Performance of one-stage pre-training framework vs proposed two-stage pre-training.}}{40}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Comparison of performance with modified pre-training order.}}{40}{}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Comparative performance analysis: Pre-training stage one vs. Random weights initialization}}{41}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Comparative performance analysis: Different image encoder setting configurations}}{42}{}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Comparative performance with previous works}}{43}{}%
 \addvspace {10\p@ }
