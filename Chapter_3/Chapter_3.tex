@@ -7,7 +7,7 @@ This chapter will focus on the current state of Industrial Anomaly Detection, na
 \label{feature extractors}
 Due to the lack of datasets with large quantity of anomalous samples and the real world use-case scenarios being the same nature, most industrial anomaly detection tasks are of the unsupervised nature. When it comes to unsupervised industrial anomaly detection, most contemporary models achieve the detection of the anomalies by performing some operations on the features extracted by pre-trained feature extractors. This approach to industrial anomaly detection was introduced by applying k-Nearest-Neighbor approach to extracted features in the paper "Deep Nearest Neighbor Anomaly Detection". Due to the efficacy of k-Nearest-Neighbor in general anomaly detection tasks, including anomaly detection on tabular data, it has been proposed that the approach would work for anomaly detection in image data. The paper compares performing kNN on raw images against kNN on extracted features from a pre-trained feature extractor, showing that the latter method shows promising performance. Since, unsupervised industrial anomaly detection models use methods such as kNN, clusterization, auto-encoders etc. on extracted features to achieve high accuracy anomaly detection. By leveraging pre-trained feature extractors, these models can bypass the need for extensive labeled datasets, which are often scarce in industrial settings, thus benefiting from the vast amounts of data and learning already captured in these pre-trained models, thereby enhancing their detection capability.
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_3/feature_extractor_usage.png}
 	\end{center}
@@ -23,7 +23,7 @@ As will be demonstrated by the experiments further in the Chapter~\ref{chapter:c
 \label{imagenet pre-trained}
 The use of ImageNet pre-trained feature extractors could carry some hidden potential drawbacks when used in industrial anomaly detection. ImageNet dataset consists of wide variety of categories, including manufactured objects alongside with natural samples, humans etc. This diverse nature is indeed beneficial for many general-purpose applications, as it allows for robust feature learning across many domains. Meanwhile, most industrial anomaly detection datasets consist of close up shots of manufactured objects like screws, pills, transistors etc, which require a different focus and precision. As we can observe, the nature of samples found in ImageNet dataset have a discrepancy from the samples that would be found in usual industrial anomaly detection task. Features learned from general purpose datasets such as ImageNet could match industrial features with less accuracy than a feature learned from a specialized dataset. Therefore, it raises the question of whether the apparent convenience of using such well-established models truly outweighs the potential benefits of training models on more specialized datasets tailored to specific industrial needs.
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_3/discrepancy.png}
 	\end{center}
@@ -39,7 +39,7 @@ To test the hypothesis stated above, in this thesis, we decided to test the perf
 \label{construction}
 There are multiple approaches to constructing the possibly suitable feature spaces for industrial tasks. These approaches can be separated mainly into two types: methods that involve enhancing or modifying the feature spaces extracted from ImageNet dataset, methods that consist of assembling a dataset that would be closely related to industrial setting. An example for the first method would be introducing random or synthetic noise to the randomly selected features learned from ImageNet. In this thesis, however, we mainly focus on, and propose multiple ways to accomplish feature space generation by the second method. First approach we explore is the extracting industrial subset from the large scale, general purpose dataset using a CNN classifier as an extractor and learning feature form that subset. Second approach is similar to the first one, with the exception that, instead of using a CNN classifier, we utilize the combination of an LLM and a VLM.
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_3/selective_extraction.png}
 	\end{center}
@@ -55,7 +55,7 @@ As mentioned before, first approach we will be discussing thoroughly is utilizin
 \label{bi-class assemble}
 The procedure of training the bi-class CNN classifier is a standard classification task training on the dataset that consists of samples of two classes, which are "industrial" and "non-industrial". Firstly, we are required a dataset with such classes, which will be acquired by manually splitting labeled multi-purpose dataset. In the case of this thesis, due to its versatility and large scale, the decision has been made to choose the dataset ImageNet. Further, we split the images in the ImageNet dataset by 1000 classes, having 454 industrial classes and 546 non-industrial classes. Finally, in order to achieve a trained CNN classifier model in a more robust way, we can leverage an ImageNet pre-trained model due to the fact that the new built dataset mostly consist of samples from ImageNet dataset.
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_3/cnn_train_data.png}
 	\end{center}
@@ -73,7 +73,7 @@ Utilizing the CNN selective image extractor, the database for feature learning c
 \label{feature learning cnn}
 Due to the nature of the selective extraction method, the resultant dataset comprises solely of the "industrial" class for all the samples extracted. Given that supervised classification task training necessitates the presence of multiple classes within a dataset, utilizing this single-class dataset for such tasks is evidently not feasible. To circumvent this limitation, we opt for an unsupervised learning approach. Specifically, we employ a self-supervised learning model known as DINO to extract meaningful features from the vast, unlabeled dataset of industrial images. For a more in-depth discussion of the DINO model and its underlying mechanisms, readers are referred to Chapter~\ref{chapter:ch2}, where detailed explanations and examples are provided.
 
-\begin{figure}[t]
+\begin{figure}[h!]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_3/cnn_extraction.png}
 	\end{center}
@@ -97,7 +97,7 @@ This process generates description for a single category in the MVTechAD dataset
 
 To determine the threshold value that is used for the extraction process, we apply CLIP with the descriptions specific to a category in the MVTechAD dataset to the images in the same category. Through the aforementioned approach the value of 0.29 was determined to be optimal to extract images. Every image that passes the threshold 0.29 on any of the descriptions are selected from the YFCC100M dataset. 
 
-\begin{figure}[t]
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_3/llm_extraction.png}
 	\end{center}
@@ -109,7 +109,7 @@ To determine the threshold value that is used for the extraction process, we app
 \label{feature learning llm}
 The use of base keywords, which are in this case categories from MVTechAD dataset, makes it possible to assemble a labeled dataset, unlike the method with the bi-class CNN classifier. This property of the method of extraction creates a possibility of feature learning through supervised classification task training. Supervised learning is accomplished by using the base keywords that are given in the former prompts, which are, in the of this thesis, the categories in the dataset MVTechAD. Moreover, we use the features of the ImageNet pre-trained model as the starting point and perform a fine-tuning instead of learning features from scratch. The performance of ImageNet features on the industrial anomaly detection makes them a good starting point for training.
 
-\begin{figure}[t]
+\begin{figure}[h!]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_3/selective_extraction.png}
 	\end{center}

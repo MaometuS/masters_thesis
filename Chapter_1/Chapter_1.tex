@@ -7,31 +7,12 @@ In our modern times when we strive to automate every menial task that was resolv
 %iad_arch
 The training process depends on the architecture of the model. In feature-embedding types of architectures, usually the training process involves performing a feature extractions and saving them with various modifications. Thereafter, during inference same feature extraction applied to the image being inferred followed by various statistical methods used to calculate the anomaly score of the sample. An example for the feature embedding architecture can be a model PatchCore, which saves nominal features in the memory bank after applying neighborhood aggregation and utilized k-nearest neighbor method to calculate an anomaly score. In reconstruction based methods, autoencoder models is trained either on the features extracted by the pre-trained model or the pre-trained model is used as an encoder inside the autoencoder. For example, in the RealNet model multiple autoencoders are trained on the layers of the feature extractor model. 
 
-\begin{figure}[t]
+\begin{figure}[h]
 \begin{center}
-\includegraphics[width=1.0\linewidth]{Chapter_1/chap1_medvqa.png}
+\includegraphics[width=1.0\linewidth]{Chapter_1/patchcore.png}
 \end{center}
-   \caption{Medical Visual Question Answering (VQA) \cite{liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.
-}
-\label{fig:medvqa}
-\end{figure}
-
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\linewidth]{Chapter_1/chap1_pretrain_finetune.png}
-\end{center}
-   \caption{Pre-training followed by finetuning: The approach involves pre-training the model on a large-scale medical image-caption dataset \cite{Pelka2018RadiologyOI}, and subsequently finetuning it specifically for the task of medical visual question answering \cite{liu2021slake}.
-}
-\label{fig:pretrainFinetune}
-\end{figure}
-
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\linewidth]{Chapter_1/chap1_medstudent.png}
-\end{center}
-   \caption{Comparing model learning to medical student training
-}
-\label{fig:medstudent}
+\caption{Medical Visual Question Answering (VQA) \cite{liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.}
+\label{fig:patchcore}
 \end{figure}
 
 In this paper we hypothesize that using ImageNet pre-trained models as feature extractors in industrial anomaly detection models can be a potential bottleneck of performance due to the generalized nature of the ImageNet dataset. There is a large representation mismatch between ImageNet which contains a large quantity of natural samples whereas the IAD requires features which represent industrial objects more accurately. Our hypothesis implies that most if not all existing models could benefit from a more specialized feature space which is extracted from datasets with focus on more industrial settings rather than being general or having natural samples.

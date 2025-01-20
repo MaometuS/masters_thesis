@@ -1,16 +1,16 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.3)  15 JAN 2025 08:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.3)  21 JAN 2025 07:51
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**c:/Users/maometus/Documents/Projects/masters_thesis/main.tex
+(c:/Users/maometus/Documents/Projects/masters_thesis/main.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
 (./huthesis.cls
 Document Class: huthesis 2004/01/06 v1.3 Harvard University Thesis Class
 (d:/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
-rs
+Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip49
 \f@nch@O@elh=\skip50
 \f@nch@O@erh=\skip51
@@ -31,29 +31,22 @@ rs
 \c@subparagraph=\count266
 \c@figure=\count267
 \c@table=\count268
-)
-(d:/texlive/2024/texmf-dist/tex/latex/graphics/epsfig.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 2024/01/14 v1.7b (e)psfig emulation (SPQR)
-
-(d:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(d:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-)
-(d:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(d:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(d:/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen142
@@ -61,16 +54,14 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 )
 \epsfxsize=\dimen144
 \epsfysize=\dimen145
-)
-(d:/texlive/2024/texmf-dist/tex/latex/tools/bm.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
 Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-)
-(d:/texlive/2024/texmf-dist/tex/generic/epsf/epsf.sty
+) (d:/texlive/2024/texmf-dist/tex/generic/epsf/epsf.sty
 This is `epsf.tex' v2.7.4 <14 February 2011>
 \epsffilein=\read2
 \epsfframemargin=\dimen146
@@ -88,20 +79,17 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box52
 \@float@everytoks=\toks19
 \@floatcapt=\box53
-)
-(d:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip58
 \multirow@cntb=\count270
 \multirow@dima=\skip59
 \bigstrutjot=\dimen154
-)
-(d:/texlive/2024/texmf-dist/tex/latex/tabto-ltx/tabto.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/tabto-ltx/tabto.sty
 Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
 \CurrentLineWidth=\dimen155
 \TabPrevPos=\dimen156
-)
-(d:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen157
 \lightrulewidth=\dimen158
@@ -120,14 +108,11 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count273
 \@lastruleclass=\count274
 \@thisrulewidth=\dimen169
-)
-(d:/texlive/2024/texmf-dist/tex/generic/nth/nth.sty
+) (d:/texlive/2024/texmf-dist/tex/generic/nth/nth.sty
 Package: nth 2002/02/27
-)
-(d:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(d:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen170
 \captionmargin=\dimen171
@@ -141,11 +126,7 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \belowcaptionskip=\skip61
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\par \ifdim \prevdepth 
->-\p@ \vskip 11\p@ \relax \fi \setbox \@tempboxa \hbox {\vbox to\topskip {}#1: 
-#2\unskip \strut }\ifdim \wd \@tempboxa >\hsize {\ssp #1: #2\unskip \strut \par
- } \else \hbox to\hsize {\hfil \unhbox \@tempboxa \hfil }\fi  on input line 117
-5.
+Package caption Info: \@makecaption = \long macro:#1#2->\par \ifdim \prevdepth >-\p@ \vskip 11\p@ \relax \fi \setbox \@tempboxa \hbox {\vbox to\topskip {}#1: #2\unskip \strut }\ifdim \wd \@tempboxa >\hsize {\ssp #1: #2\unskip \strut \par } \else \hbox to\hsize {\hfil \unhbox \@tempboxa \hfil }\fi  on input line 1175.
 )
 
 Package caption Warning: Unknown document class (or package),
@@ -164,16 +145,13 @@ Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
 \extratabsurround=\skip62
 \backup@length=\skip63
 \ar@cellbox=\box55
-)
-(d:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(d:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -183,14 +161,12 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-)
-(d:/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks21
 \minrowclearance=\skip64
 \rownum=\count277
-)
-(d:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip65
 \subfigcapskip=\skip66
@@ -209,38 +185,28 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (d:/texlive/2024/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip69
 \subfig@bottom=\skip70
-)
-(d:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
 \AP@output=\toks22
 \AP@partial=\box56
 \AP@footins=\box57
-)
-(d:/texlive/2024/texmf-dist/tex/latex/emptypage/emptypage.sty
-Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
-pages
-)
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/emptypage/emptypage.sty
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty pages
+) (d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJKutf8.sty
 Package: CJKutf8 2021/10/16 4.8.5
-
-(d:/texlive/2024/texmf-dist/tex/generic/iftex/ifpdf.sty
+ (d:/texlive/2024/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-
-(d:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+ (d:/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-))
-(d:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+)) (d:/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks23
 \inpenc@posthook=\toks24
-)
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJK.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJK.sty
 Package: CJK 2021/10/16 4.8.5
-
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
 Package: MULEenc 2021/10/16 4.8.5
-)
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJK.enc
+) (d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/CJK.enc
 File: CJK.enc 2021/10/16 4.8.5
 Now handling font encoding C00 ...
 ... no UTF-8 mapping file for font encoding C00
@@ -308,32 +274,26 @@ Now handling font encoding C62 ...
 ... no UTF-8 mapping file for font encoding C62
 )
 \CJK@indent=\box58
-)
-(d:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-))
-(d:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
+)) (d:/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/05/23 v2.17q AMS math features
 \@mathmargin=\skip71
 
 For additional information on amsmath, use the `?' option.
 (d:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
-(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
 \ex@=\dimen182
-))
-(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 LaTeX Info: Redefining \boldsymbol on input line 28.
 \pmbraise@=\dimen183
-)
-(d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count282
@@ -383,26 +343,20 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-)
-(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(d:/texlive/2024/texmf-dist/tex/latex/breakurl/breakurl.sty
+)) (d:/texlive/2024/texmf-dist/tex/latex/breakurl/breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
-
-(d:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (d:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
@@ -411,17 +365,14 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 
 Package breakurl Warning: You are using breakurl while processing via pdflatex.
-
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
 ) (d:/texlive/2024/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-)
-(d:/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
-
-(d:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
+ (d:/texlive/2024/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count295
 \calc@Bcount=\count296
@@ -433,8 +384,7 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count297
 \calc@Cskip=\skip76
-)
-(d:/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count298
@@ -448,25 +398,20 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen199
 \xmathstrut@box=\box61
 \xmathstrut@dim=\dimen256
-)
-(d:/texlive/2024/texmf-dist/tex/latex/bbm-macros/bbm.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/bbm-macros/bbm.sty
 Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
 LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 (Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
-)
-(d:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
+) (d:/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 LaTeX Info: Redefining \subref on input line 189.
 Package subcaption Info: The counter `subfigure' was already defined by
-(subcaption)             an unknown document class or package on input line 238
-.
+(subcaption)             an unknown document class or package on input line 238.
 Package subcaption Info: The counter `subtable' was already defined by
-(subcaption)             an unknown document class or package on input line 238
-.
-)
-(d:/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
+(subcaption)             an unknown document class or package on input line 238.
+) (d:/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen257
 \TX@old@table=\dimen258
@@ -475,18 +420,43 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen261
 \TX@cols=\count299
 \TX@ftn=\toks32
-)
-(d:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (d:/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count300
+\lst@gtempboxa=\box62
+\lst@token=\toks33
+\lst@length=\count301
+\lst@currlwidth=\dimen262
+\lst@column=\count302
+\lst@pos=\count303
+\lst@lostspace=\dimen263
+\lst@width=\dimen264
+\lst@newlines=\count304
+\lst@lineno=\count305
+\lst@maxwidth=\dimen265
+ (d:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+) (d:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count306
+\lst@skipnumbers=\count307
+\lst@framebox=\box63
+) (d:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+ (d:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count300
-\l__pdf_internal_box=\box62
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box64
 )
 
 LaTeX Warning: Unused global option(s):
     [epsbox,kcite,here].
 
-(./main.aux (./Front/frontmatter.aux) (./Chapter_1/Chapter_1.aux)
-(./Chapter_2/Chapter_2.aux
+(./main.aux (./Front/frontmatter.aux) (./Chapter_1/Chapter_1.aux) (./Chapter_2/Chapter_2.aux
+
+LaTeX Warning: Label `fig:cnn' multiply defined.
+
 
 LaTeX Warning: Label `fig:cnn' multiply defined.
 
@@ -512,143 +482,146 @@ LaTeX Warning: Label `fig:cnn' multiply defined.
 
 LaTeX Warning: Label `fig:cnn' multiply defined.
 
-) (./Chapter_4/Chapter_4.aux) (./Chapter_5/Chapter_5.aux)
-(./References/thesis_ref.aux) (./Acknowledge/Acknowledgments.aux))
+
+LaTeX Warning: Label `fig:cnn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cnn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cnn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cnn' multiply defined.
+
+
+LaTeX Warning: Label `fig:cnn' multiply defined.
+
+) (./Chapter_4/Chapter_4.aux) (./Chapter_5/Chapter_5.aux) (./References/thesis_ref.aux) (./Acknowledge/Acknowledgments.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-
-(d:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+ (d:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count301
-\scratchdimen=\dimen262
-\scratchbox=\box63
-\nofMPsegments=\count302
-\nofMParguments=\count303
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count304
-\MPscratchDim=\dimen263
-\MPnumerator=\count305
-\makeMPintoPDFobject=\count306
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count309
+\scratchdimen=\dimen266
+\scratchbox=\box65
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen267
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks35
 ) (d:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(d:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (d:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count315
 \openout2 = `Front/frontmatter.aux'.
 
-
-(./Front/frontmatter.tex
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
+ (./Front/frontmatter.tex (d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.bdg
 File: UTF8.bdg 2021/10/16 4.8.5
-)
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
+) (d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.enc
 File: UTF8.enc 2021/10/16 4.8.5
-)
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
+) (d:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-LaTeX Font Info:    Trying to load font information for C70+min on input line 1
-2.
-
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fd
+LaTeX Font Info:    Trying to load font information for C70+min on input line 12.
+ (d:/texlive/2024/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fd
 File: c70min.fd 2021/10/16 4.8.5
-)
-(d:/texlive/2024/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fdx
+) (d:/texlive/2024/texmf-dist/tex/latex/cjk/contrib/wadalab/c70min.fdx
 File: c70min.fdx 2021/10/16 4.8.5
 ))
 
 [1
 
 
-{d:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2024/
-texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-(./Abstract/Abstract.tex
+{d:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./Abstract/Abstract.tex
 
 [2
 
@@ -666,8 +639,7 @@ LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
-
-(d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (d:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
@@ -685,7 +657,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [2] (./main.lof
@@ -703,7 +674,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [4] (./main.lot)
@@ -725,8 +695,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 Chapter 1.
 
 Overfull \hbox (9.59496pt too wide) in paragraph at lines 8--9
-[]\T1/cmr/m/n/12 The train-ing pro-cess de-pends on the ar-chi-tec-ture of the 
-model. In feature-embedding
+[]\T1/cmr/m/n/12 The train-ing pro-cess de-pends on the ar-chi-tec-ture of the model. In feature-embedding
  []
 
 
@@ -738,26 +707,11 @@ Underfull \vbox (badness 4726) has occurred while \output is active []
 
 
 ]
-<Chapter_1/chap1_medvqa.png, id=72, 611.28375pt x 255.95625pt>
-File: Chapter_1/chap1_medvqa.png Graphic file (type png)
-<use Chapter_1/chap1_medvqa.png>
-Package pdftex.def Info: Chapter_1/chap1_medvqa.png  used on input line 12.
-(pdftex.def)             Requested size: 433.62pt x 181.56226pt.
-<Chapter_1/chap1_pretrain_finetune.png, id=74, 782.32275pt x 256.5585pt>
-File: Chapter_1/chap1_pretrain_finetune.png Graphic file (type png)
-<use Chapter_1/chap1_pretrain_finetune.png>
-Package pdftex.def Info: Chapter_1/chap1_pretrain_finetune.png  used on input l
-ine 21.
-(pdftex.def)             Requested size: 433.62pt x 142.20374pt.
-<Chapter_1/chap1_medstudent.png, id=75, 737.154pt x 274.626pt>
-File: Chapter_1/chap1_medstudent.png Graphic file (type png)
-<use Chapter_1/chap1_medstudent.png>
-Package pdftex.def Info: Chapter_1/chap1_medstudent.png  used on input line 30.
-
-(pdftex.def)             Requested size: 433.62pt x 161.55022pt.
-
-Underfull \vbox (badness 1831) has occurred while \output is active []
-
+<Chapter_1/patchcore.png, id=72, 858.8085pt x 236.68425pt>
+File: Chapter_1/patchcore.png Graphic file (type png)
+<use Chapter_1/patchcore.png>
+Package pdftex.def Info: Chapter_1/patchcore.png  used on input line 12.
+(pdftex.def)             Requested size: 433.62pt x 119.50473pt.
 
 
 
@@ -765,10 +719,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[2 <./Chapter_1/chap1_medvqa.png>]
+[2 <./Chapter_1/patchcore.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -778,20 +731,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[3 <./Chapter_1/chap1_pretrain_finetune.png>]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[4 <./Chapter_1/chap1_medstudent.png>])
+[3])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -801,20 +743,24 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
+[4]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [5]
 
+[6
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[6]
+]
 \openout2 = `Chapter_2/Chapter_2.aux'.
 
  (./Chapter_2/Chapter_2.tex
@@ -827,19 +773,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [7
 
 
-
-
-
 ]
-<Chapter_2/vit.png, id=98, 814.242pt x 443.85825pt>
+<Chapter_2/vit.png, id=94, 814.242pt x 443.85825pt>
 File: Chapter_2/vit.png Graphic file (type png)
 <use Chapter_2/vit.png>
-Package pdftex.def Info: Chapter_2/vit.png  used on input line 15.
-(pdftex.def)             Requested size: 433.62pt x 236.37479pt.
+Package pdftex.def Info: Chapter_2/vit.png  used on input line 13.
+(pdftex.def)             Requested size: 346.89731pt x 189.10118pt.
 
-Overfull \hbox (6.82796pt too wide) in paragraph at lines 21--22
-[]\T1/cmr/m/n/12 In the re-cent years Vi-sion Trans-form-ers have been used ex-
-ten-sively in self-supervised
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (6.82796pt too wide) in paragraph at lines 19--20
+[]\T1/cmr/m/n/12 In the re-cent years Vi-sion Trans-form-ers have been used ex-ten-sively in self-supervised
  []
 
 
@@ -849,30 +795,25 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [8]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [9 <./Chapter_2/vit.png>]
-<Chapter_2/cnn.png, id=108, 778.107pt x 228.855pt>
+<Chapter_2/cnn.png, id=104, 778.107pt x 228.855pt>
 File: Chapter_2/cnn.png Graphic file (type png)
 <use Chapter_2/cnn.png>
-Package pdftex.def Info: Chapter_2/cnn.png  used on input line 32.
+Package pdftex.def Info: Chapter_2/cnn.png  used on input line 29.
 (pdftex.def)             Requested size: 433.62pt x 127.53633pt.
 
-Underfull \vbox (badness 2495) has occurred while \output is active []
+Underfull \vbox (badness 1924) has occurred while \output is active []
 
 
 
@@ -881,29 +822,32 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[10]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[11 <./Chapter_2/cnn.png>]
-<Chapter_2/resnet.png, id=117, 367.97475pt x 817.25325pt>
+[10 <./Chapter_2/cnn.png>]
+<Chapter_2/resnet.png, id=109, 505.89pt x 287.57437pt>
 File: Chapter_2/resnet.png Graphic file (type png)
 <use Chapter_2/resnet.png>
-Package pdftex.def Info: Chapter_2/resnet.png  used on input line 49.
-(pdftex.def)             Requested size: 216.81pt x 481.52678pt.
-<Chapter_2/wide_resnet.png, id=118, 860.21375pt x 351.3125pt>
+Package pdftex.def Info: Chapter_2/resnet.png  used on input line 45.
+(pdftex.def)             Requested size: 216.81pt x 123.24648pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[11]
+<Chapter_2/wide_resnet.png, id=114, 860.21375pt x 351.3125pt>
 File: Chapter_2/wide_resnet.png Graphic file (type png)
 <use Chapter_2/wide_resnet.png>
-Package pdftex.def Info: Chapter_2/wide_resnet.png  used on input line 64.
+Package pdftex.def Info: Chapter_2/wide_resnet.png  used on input line 59.
 (pdftex.def)             Requested size: 433.62pt x 177.09245pt.
 
 
@@ -912,73 +856,58 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[12]
+[12 <./Chapter_2/resnet.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[13 <./Chapter_2/resnet.png>]
+[13 <./Chapter_2/wide_resnet.png>]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[14 <./Chapter_2/wide_resnet.png>]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[15
-
-]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[16]
-<Chapter_2/dino.png, id=137, 368.577pt x 368.577pt>
+[14]
+<Chapter_2/dino.png, id=126, 368.577pt x 368.577pt>
 File: Chapter_2/dino.png Graphic file (type png)
 <use Chapter_2/dino.png>
-Package pdftex.def Info: Chapter_2/dino.png  used on input line 91.
+Package pdftex.def Info: Chapter_2/dino.png  used on input line 83.
 (pdftex.def)             Requested size: 216.81pt x 216.8174pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[17 <./Chapter_2/dino.png>]
-<Chapter_2/iad.png, id=142, 687.7695pt x 311.36325pt>
+[15]
+<Chapter_2/iad.png, id=131, 687.7695pt x 311.36325pt>
 File: Chapter_2/iad.png Graphic file (type png)
 <use Chapter_2/iad.png>
-Package pdftex.def Info: Chapter_2/iad.png  used on input line 106.
-(pdftex.def)             Requested size: 433.62pt x 196.30716pt.
+Package pdftex.def Info: Chapter_2/iad.png  used on input line 95.
+(pdftex.def)             Requested size: 346.89731pt x 157.04478pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 1708) has occurred while \output is active []
+
 
 
 
@@ -986,20 +915,57 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[18]
-<Chapter_2/uiad.png, id=146, 944.328pt x 392.667pt>
+[16 <./Chapter_2/dino.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[17 <./Chapter_2/iad.png>]
+<Chapter_2/uiad.png, id=140, 944.328pt x 392.667pt>
 File: Chapter_2/uiad.png Graphic file (type png)
 <use Chapter_2/uiad.png>
-Package pdftex.def Info: Chapter_2/uiad.png  used on input line 119.
-(pdftex.def)             Requested size: 433.62pt x 180.30547pt.
-<Chapter_2/patchcore.png, id=147, 858.8085pt x 236.68425pt>
+Package pdftex.def Info: Chapter_2/uiad.png  used on input line 111.
+(pdftex.def)             Requested size: 346.89731pt x 144.24197pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[18
+
+ <./Chapter_2/uiad.png>]
+<Chapter_2/patchcore.png, id=145, 858.8085pt x 236.68425pt>
 File: Chapter_2/patchcore.png Graphic file (type png)
 <use Chapter_2/patchcore.png>
-Package pdftex.def Info: Chapter_2/patchcore.png  used on input line 130.
-(pdftex.def)             Requested size: 433.62pt x 119.50473pt.
+Package pdftex.def Info: Chapter_2/patchcore.png  used on input line 124.
+(pdftex.def)             Requested size: 390.25534pt x 107.55426pt.
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[19
+
+ <./Chapter_2/patchcore.png>]
+<Chapter_2/mvtec.jpg, id=150, 1389.19pt x 904.37875pt>
+File: Chapter_2/mvtec.jpg Graphic file (type jpg)
+<use Chapter_2/mvtec.jpg>
+Package pdftex.def Info: Chapter_2/mvtec.jpg  used on input line 137.
+(pdftex.def)             Requested size: 303.53267pt x 197.59776pt.
 )
 
 
@@ -1007,24 +973,14 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[19 <./Chapter_2/iad.png>]
+[20
 
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[20 <./Chapter_2/uiad.png> <./Chapter_2/patchcore.png>]
+ <./Chapter_2/mvtec.jpg>]
 \openout2 = `Chapter_3/Chapter_3.aux'.
 
-
-(./Chapter_3/Chapter_3.tex
+ (./Chapter_3/Chapter_3.tex
 Chapter 3.
 
 Underfull \vbox (badness 4752) has occurred while \output is active []
@@ -1047,15 +1003,13 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 27.11469pt, for example:
 (fancyhdr)                \setlength{\headheight}{27.11469pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-13.11469pt}.
 
 [22]
-<Chapter_3/feature_extractor_usage.png, id=164, 844.3545pt x 360.1455pt>
+<Chapter_3/feature_extractor_usage.png, id=161, 844.3545pt x 360.1455pt>
 File: Chapter_3/feature_extractor_usage.png Graphic file (type png)
 <use Chapter_3/feature_extractor_usage.png>
-Package pdftex.def Info: Chapter_3/feature_extractor_usage.png  used on input l
-ine 12.
+Package pdftex.def Info: Chapter_3/feature_extractor_usage.png  used on input line 12.
 (pdftex.def)             Requested size: 433.62pt x 184.95218pt.
 
 
@@ -1064,7 +1018,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [23 <./Chapter_3/feature_extractor_usage.png>]
@@ -1074,11 +1027,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [24]
-<Chapter_3/discrepancy.png, id=172, 808.82175pt x 407.72325pt>
+<Chapter_3/discrepancy.png, id=169, 808.82175pt x 407.72325pt>
 File: Chapter_3/discrepancy.png Graphic file (type png)
 <use Chapter_3/discrepancy.png>
 Package pdftex.def Info: Chapter_3/discrepancy.png  used on input line 28.
@@ -1090,16 +1042,18 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [25 <./Chapter_3/discrepancy.png>]
-<Chapter_3/selective_extraction.png, id=177, 1091.277pt x 147.55125pt>
+<Chapter_3/selective_extraction.png, id=174, 1091.277pt x 147.55125pt>
 File: Chapter_3/selective_extraction.png Graphic file (type png)
 <use Chapter_3/selective_extraction.png>
-Package pdftex.def Info: Chapter_3/selective_extraction.png  used on input line
- 44.
+Package pdftex.def Info: Chapter_3/selective_extraction.png  used on input line 44.
 (pdftex.def)             Requested size: 433.62pt x 58.62994pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 
@@ -1107,7 +1061,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [26]
@@ -1117,18 +1070,14 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [27 <./Chapter_3/selective_extraction.png>]
-<Chapter_3/cnn_train_data.png, id=186, 835.32076pt x 290.88675pt>
+<Chapter_3/cnn_train_data.png, id=183, 835.32076pt x 290.88675pt>
 File: Chapter_3/cnn_train_data.png Graphic file (type png)
 <use Chapter_3/cnn_train_data.png>
 Package pdftex.def Info: Chapter_3/cnn_train_data.png  used on input line 60.
 (pdftex.def)             Requested size: 433.62pt x 151.00009pt.
-
-Underfull \vbox (badness 7012) has occurred while \output is active []
-
 
 
 
@@ -1136,7 +1085,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [28 <./Chapter_3/cnn_train_data.png>]
@@ -1146,11 +1094,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [29]
-<Chapter_3/cnn_extraction.png, id=194, 1064.17575pt x 353.52075pt>
+<Chapter_3/cnn_extraction.png, id=191, 1064.17575pt x 353.52075pt>
 File: Chapter_3/cnn_extraction.png Graphic file (type png)
 <use Chapter_3/cnn_extraction.png>
 Package pdftex.def Info: Chapter_3/cnn_extraction.png  used on input line 78.
@@ -1162,15 +1109,18 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [30 <./Chapter_3/cnn_extraction.png>]
-<Chapter_3/llm_extraction.png, id=199, 958.17975pt x 352.31625pt>
+<Chapter_3/llm_extraction.png, id=196, 958.17975pt x 352.31625pt>
 File: Chapter_3/llm_extraction.png Graphic file (type png)
 <use Chapter_3/llm_extraction.png>
 Package pdftex.def Info: Chapter_3/llm_extraction.png  used on input line 102.
 (pdftex.def)             Requested size: 433.62pt x 159.43861pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 
@@ -1178,15 +1128,17 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [31]
 File: Chapter_3/selective_extraction.png Graphic file (type png)
 <use Chapter_3/selective_extraction.png>
-Package pdftex.def Info: Chapter_3/selective_extraction.png  used on input line
- 114.
+Package pdftex.def Info: Chapter_3/selective_extraction.png  used on input line 114.
 (pdftex.def)             Requested size: 433.62pt x 58.62994pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 )
 
 
@@ -1194,7 +1146,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [32 <./Chapter_3/llm_extraction.png>]
@@ -1204,7 +1155,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [33]
@@ -1218,14 +1168,81 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
  (./Chapter_4/Chapter_4.tex
 Chapter 4.
-)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [35
 
 
 ]
+<Chapter_4/auroc.png, id=214, 465.23813pt x 362.85562pt>
+File: Chapter_4/auroc.png Graphic file (type png)
+<use Chapter_4/auroc.png>
+Package pdftex.def Info: Chapter_4/auroc.png  used on input line 23.
+(pdftex.def)             Requested size: 216.81pt x 169.09708pt.
 
-[36
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[36]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[37 <./Chapter_4/auroc.png>] (d:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 53.
+ (d:/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 54.
+<Chapter_4/vit.png, id=224, 1009.52156pt x 541.27219pt>
+File: Chapter_4/vit.png Graphic file (type png)
+<use Chapter_4/vit.png>
+Package pdftex.def Info: Chapter_4/vit.png  used on input line 72.
+(pdftex.def)             Requested size: 433.62pt x 232.49472pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[38]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[39 <./Chapter_4/vit.png>]
+
+[40
 
 
 
@@ -1236,12 +1253,12 @@ Chapter 4.
 Chapter 5.
 )
 
-[37
+[41
 
 
 ]
 
-[38
+[42
 
 
 
@@ -1250,12 +1267,12 @@ Chapter 5.
 
  (./References/thesis_ref.tex (./main.bbl))
 
-[39
+[43
 
 
 ]
 
-[40
+[44
 
 
 
@@ -1264,23 +1281,19 @@ Chapter 5.
 
  (./Acknowledge/Acknowledgments.tex
 Overfull \hbox (6.04346pt too wide) in paragraph at lines 5--6
-[]\T1/cmr/m/n/12 First and fore-most, I ex-press my deep grat-i-tude to my su-p
-er-vi-sor Pro-fes-sor Takayuki
+[]\T1/cmr/m/n/12 First and fore-most, I ex-press my deep grat-i-tude to my su-per-vi-sor Pro-fes-sor Takayuki
  []
 
 )
 
-[41
+[45
 
 ]
 
 Package caption Warning: Unused \captionsetup[table] on input line 27.
 See the caption package documentation for explanation.
 
-(./main.aux (./Front/frontmatter.aux) (./Chapter_1/Chapter_1.aux)
-(./Chapter_2/Chapter_2.aux) (./Chapter_3/Chapter_3.aux)
-(./Chapter_4/Chapter_4.aux) (./Chapter_5/Chapter_5.aux)
-(./References/thesis_ref.aux) (./Acknowledge/Acknowledgments.aux))
+(./main.aux (./Front/frontmatter.aux) (./Chapter_1/Chapter_1.aux) (./Chapter_2/Chapter_2.aux) (./Chapter_3/Chapter_3.aux) (./Chapter_4/Chapter_4.aux) (./Chapter_5/Chapter_5.aux) (./References/thesis_ref.aux) (./Acknowledge/Acknowledgments.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-09-10>
@@ -1291,36 +1304,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8746 strings out of 473578
- 139749 string characters out of 5732242
- 529497 words of memory out of 5000000
- 31322 multiletter control sequences out of 15000+600000
- 588343 words of font info for 131 fonts, out of 8000000 for 9000
+ 10580 strings out of 473578
+ 164442 string characters out of 5732242
+ 739942 words of memory out of 5000000
+ 33132 multiletter control sequences out of 15000+600000
+ 591272 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,79p,1536b,1004s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjhira.pfb><d:/texlive/2
-024/texmf-dist/fonts/type1/wadalab/dmj/dmjka.pfb><d:/texlive/2024/texmf-dist/fo
-nts/type1/wadalab/dmj/dmjkb.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab
-/dmj/dmjkc.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkd.pfb><d
-:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjke.pfb><d:/texlive/2024/te
-xmf-dist/fonts/type1/wadalab/dmj/dmjkf.pfb><d:/texlive/2024/texmf-dist/fonts/ty
-pe1/wadalab/dmj/dmjkh.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/d
-mjki.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkj.pfb><d:/texl
-ive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkl.pfb><d:/texlive/2024/texmf-di
-st/fonts/type1/public/cm-super/sfbx1200.pfb><d:/texlive/2024/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1440.pfb><d:/texlive/2024/texmf-dist/fonts/type1/publi
-c/cm-super/sfbx1728.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super
-/sfbx2074.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.
-pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/te
-xlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2024
-/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><d:/texlive/2024/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1728.pfb><d:/texlive/2024/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm2488.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public
-/cm-super/sfti1200.pfb>
-Output written on main.pdf (51 pages, 2878741 bytes).
+ 72i,12n,79p,1600b,1267s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjhira.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjka.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkb.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkc.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkd.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjke.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkf.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkh.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjki.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkj.pfb><d:/texlive/2024/texmf-dist/fonts/type1/wadalab/dmj/dmjkl.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on main.pdf (55 pages, 3348493 bytes).
 PDF statistics:
- 332 PDF objects out of 1000 (max. 8388607)
- 183 compressed objects within 2 object streams
+ 367 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
