@@ -1,7 +1,7 @@
-\chapter{Experiments}
+\chapter{Experiments, Results and Implementation}
 \label{chapter:ch4}
 
-In this chapter the process and results of multiple experiments, that look into performance of various pre-trained feature extractors in industrial anomaly detection tasks, will be presented. First experiment serves to determine the layers of vision transformer architecture that would provide the highest accuracy for anomaly detection when applied as backbones. Secondly, we will provide a performance comparison between different types of deep learning visual models as feature extractors on the PatchCore model, in order to determine which architecture should be chosen for further experiments. Next, the analysis on the efficacy of self-supervised model DINO against supervised classification task training, helping us to make the decision for verifying the method for feature learning. Further, we test the feature space learned from the dataset constructed by the method of selective extraction using CNN bi-class classifiers. Generated feature space competes against one of the state-of-the-art feature spaces for industrial anomaly detection: WideResNet50. Lastly, we will engage in a comparative analysis of the efficiency of the feature space based on a dataset extracted through a method that employs both large language models (LLMs) and visual language models (VLMs). Through these comprehensive experiments and analyses, we aim to derive valuable insights and optimal approaches for advancing industrial anomaly detection by approaching the task as a feature space problem.
+In this chapter the process and results of multiple experiments, that look into performance of various pre-trained feature extractors in industrial anomaly detection tasks, will be presented. First experiment serves to determine the layers of vision transformer architecture that would provide the highest accuracy for anomaly detection when applied as backbones. Secondly, the analysis on the efficacy of self-supervised model DINO against supervised classification task training, helping us to make the decision for verifying the method for feature learning. Next, we will provide a performance comparison between different types of deep learning visual models as feature extractors on the PatchCore model, in order to determine which architecture should be chosen for further experiments. Further, we test the feature space learned from the dataset constructed by the method of selective extraction using CNN bi-class classifiers. Generated feature space competes against one of the state-of-the-art feature spaces for industrial anomaly detection: WideResNet50. Lastly, we will engage in a comparative analysis of the efficiency of the feature space based on a dataset extracted through a method that employs both large language models (LLMs) and visual language models (VLMs). Through these comprehensive experiments and analyses, we aim to derive valuable insights and optimal approaches for advancing industrial anomaly detection by approaching the task as a feature space problem.
 
 \section{Scoring methodology}
 
@@ -65,12 +65,285 @@ def patchify(self, features, return_spatial_info=False):
 \section{Comparison of ViT layers}
 \label{vit layers}
 
-In the first experiment we will be analysing the difference of the layers of vision transformer architectures. Throughout the experiment we use VitB/16 pre-trained on ImageNet classification task. 
+In the first experiment we will be analysing the difference of the layers of vision transformer architectures. Throughout the experiment we use VitB/16 pre-trained on ImageNet classification task. PatchCore research paper recommend using the features from one layer, or aggregating features from up to two layers in order to achieve best results. The results in the figure \ref{fig:vit_layers} indicate Instance AUROC mean scores across all the categories in the dataset MVTechAd. As displayed in the figure \ref{fig:vit_layers}, the best approach is the utilization of the layer 8 alone. This approach achieves the highest score of 94.38\%. For all the experiments involving Vision Transformer architecture, we will be opting for layer 8 of VitB/16 model.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/vit.png}
 	\end{center}
-	\caption{Medical Visual Question Answering (VQA) \cite{liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.}
+	\caption{Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}
 	\label{fig:vit_layers}
 \end{figure}
+
+\section{Superiority of WideResNet50 over ResNet50}
+In the following experiment we show that WideResNet50 architecture has an overhead of efficiency against ResNet50 architecture. Analysing the figure \ref{fig:resnet_vs_wideresnet} we can clearly see that WideResNet50 has better performances in all the mean scores. Following this discovery, and the conclusion from the next experiment, we opt for the usage of WideResNet50 model to learn features from extracted datasets.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/resnet_vs_wideresnet.png}
+	\end{center}
+	\caption{Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}
+	\label{fig:resnet_vs_wideresnet}
+\end{figure}
+
+\section{Analysis on the efficieny of DINO model}
+\label{sec:dino_tests}
+In this experiment we aim to determine if the self-supervised training model is capable enough to compete with the supervised learning methods in generating feature spaces for the use in IAD models. We compare ResNet50 model the pre-trained using supervised classification method by the PyTorch team and ResNet50 pre-trained using DINO self-supervised learning mode. Both models are trained on ImageNet1K dataset. Below we provide recipes for training each model.
+
+PyTorch pre-trained ResNet50:
+
+\lstset{frame=tb,
+  language=bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{lstlisting}
+torchrun --nproc_per_node=8 train.py --model $MODEL_NAME --batch-size 128 \ 
+--lr 0.5 --lr-scheduler cosineannealinglr --lr-warmup-epochs 5 \
+--lr-warmup-method linear --auto-augment ta_wide --epochs 600 \ 
+--random-erase 0.1 --weight-decay 0.00002 --norm-weight-decay 0.0 \ 
+--label-smoothing 0.1 --mixup-alpha 0.2 --cutmix-alpha 1.0 \
+--train-crop-size 176 --model-ema --val-resize-size 232
+\end{lstlisting}
+
+DINO pre-trained ResNet50:
+
+\lstset{frame=tb,
+  language=json,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{lstlisting}
+{
+	"arch": "resnet50", 
+	"out_dim": 60000, 
+	"norm_last_layer": true, 
+	"warmup_teacher_temp": 0.04, 
+	"teacher_temp": 0.07, 
+	"warmup_teacher_temp_epochs": 50, 
+	"use_fp16": false, 
+	"weight_decay": 0.000001, 
+	"weight_decay_end": 0.000001, 
+	"clip_grad": 0, 
+	"batch_size_per_gpu": 51, 
+	"epochs": 800, 
+	"freeze_last_layer": 1, 
+	"lr": 0.3, 
+	"warmup_epochs": 10, 
+	"min_lr": 0.0048, 
+	"global_crops_scale": [0.14, 1.0], 
+	"local_crops_scale": [0.05, 0.14], 
+	"local_crops_number": 6, 
+	"seed": 0, 
+	"num_workers": 10, 
+	"world_size": 80, 
+	"optimizer": "lars", 
+	"momentum_teacher": 0.996, 
+	"use_bn_in_head": true
+}
+\end{lstlisting}
+
+The figure \ref{fig:dino_test} shows the mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset. From the data presented in the figure we can conclude that DINO self-supervised method can outperform supervised classification learning when trained with a correct recipe. As it is shown, in this case, DINO model outperforms supervised method by 0.07\% in Instance AUROC, 0.15\% in Full Pixel AUROC and 0.27\% in Anomaly Pixel AUROC. Based on these findings we can move forward using the DINO self-supervised learning model for our feature learning purposes.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/dino.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:dino_test}
+\end{figure}
+
+\section{CNN bi-class classifier selective extraction experiments}
+\label{sec:comp_vis}
+
+\subsection{Training the CNN bi-class classifier}
+We are going to put together a dataset in order to train a CNN bi-class classifier with the method indicated in the Chapter~\ref{chapter:ch3}. The datasets is assembled with the method displayed in the figure \ref{fig:bi_class_prep}. Industrial class of the dataset contains: 454 classes from ImageNet with the removal of images that contain faces prominently, also it contains multiple industrial datasets that are stated in the figure \ref{fig:bi_class_prep}. It is important to note that, the industrial datasets included in the industrial class of the dataset for the training of CNN bi-class classifier, do not reflect on the final learned features that are used in the PatchCore model during test time. We assemble the non-industrial part of the dataset by using 546 classes from ImageNet dataset and Labeled Faces in Wild dataset.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/bi_class_prep.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:bi_class_prep}
+\end{figure}
+
+Using the constructed dataset the extractor model is trained by fine-tuning ImageNet pre-trained ResNet50 model for 25 epochs. The recipe for the fine-tuning is as follows:
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{lstlisting}
+def fine_tune():
+	model_ft = models.resnet50(weights='IMAGENET1K_V1')
+	num_ftrs = model_ft.fc.in_features
+	model_ft.fc = nn.Linear(num_ftrs, len(class_names))
+	model_ft = model_ft.to(device)
+	criterion = nn.CrossEntropyLoss()
+	optimizer_ft = optim.Adam(model_ft.parameters(), lr=0.001)
+	exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=7, gamma=0.1)
+	model_ft = train_model(model_ft, criterion, optimizer_ft, exp_lr_scheduler, num_epochs=20)
+	torch.save(model_ft.state_dict(), 'fine_tuned.pt')
+\end{lstlisting}
+
+\subsection{Selective extraction of the dataset for feature learning}
+We utilize the trained CNN bi-class classifier to extract an industrial specialized dataset from the YFCC100M dataset. We use the following method to extract the desired samples from the large dataset:
+
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{lstlisting}
+def predict_image(image_name):
+    image = image_loader(image_name)
+    with torch.no_grad():
+        logits = model.forward(image)
+    ps = torch.exp(logits)
+    _, predTest = torch.max(ps, 1)
+    return predTest[0]
+
+cnt = 0
+
+for (root, dirs, files) in os.walk(address, topdown=True):
+    cnt = cnt + 1
+    for f in files:
+        if f.endswith(".jpg"):
+            try:
+                t = predict_image(os.path.join(root, f))
+            except:
+                print(os.path.join(root, f))
+            if t == 0:
+                os.makedirs(os.path.join(addressDest, str(cnt//1000)), exist_ok=True)
+                shutil.copy2(os.path.join(root, f), os.path.join(addressDest, str(cnt//1000), f))
+\end{lstlisting}
+
+Here, model refers to bi-class CNN classifier model. After applying this proces to the YFCC100M dataset for a limited amount of time, we receive 2 343 499 industrial samples.
+
+\subsection{Learning features using DINO VitB/16 model}
+First batch of feature space comparisons include the state-of-the-art feature extractor ImageNet pre-trained WideResNet50, ImageNet pre-trained VitB/16 and VitB/16 trained with self-supervised learning method DINO. The recipe for training the ImageNet pre-trained WideResNet50 and ImageNet pre-trained VitB/16 is the same as the recipe for ResNet50 stated in the section \ref{sec:dino_tests}. The recipe for the training of VitB/16 on the extracted dataset is as follows (Here, "/po1/rakhimov/extracted" is the extracted dataset.):
+
+\lstset{frame=tb,
+  language=bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{lstlisting}
+torchrun --nnodes=1 --nproc_per_node=4 main_dino.py --arch vit_base \
+--data_path /po1/rakhimov/extracted --output_dir /po1/rakhimov/result \ 
+--epochs 100
+\end{lstlisting}
+
+It can be understood from the data displayed in the figure \ref{fig:vit_custom_test} that Vision Transformer architecture performs noticably less than CNN architecture. We can draw said conclusion by analysing the performances of ImageNet pre-trained WideResNet50 and VitB/16. Differences in performance are: 6.22\% for Instance AUROC, 2.47\% for Full Pixel AUROC and 2.8\% for Anomaly Pixel AUROC. When it comes to the extracted dataset, although we have efficiency improvement upon VitB/16 trained on ImageNet, overall performance gain over the state-of-the-art feature extractor has not been achieved. Moreover, from this experiment we can conclude that Vision Transformer architecture is unadvisible to use in the further experiments.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/vit_custom.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:vit_custom_test}
+\end{figure}
+
+\subsection{Learning features using DINO self-supervised method with the WideResNet50 model}
+After the conclusions from the last experiments, we train WideResNet50 using DINO self-supervised method on the extracted dataset. In order to test the efficacy of the selection method, we also train WideResNet50 using the same recipe on 2 343 499 randomly extracted from the YFCC100M dataset. The recipe to train WideResNet50 is as follows:
+
+\lstset{frame=tb,
+  language=bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{lstlisting}
+torchrun --nproc_per_node=8 main_dino.py --arch wide_resnet50_2 \ 
+--optimizer sgd --lr 0.03 --weight_decay 1e-4 \ 
+--weight_decay_end 1e-4 --global_crops_scale 0.14 1 \ 
+--local_crops_scale 0.05 0.14 --data_path /po1/rakhimov/extracted \ 
+--output_dir /po1/rakhimov/result_wd50 --epochs 100
+\end{lstlisting}
+
+We also include ResNet50 pre-trained on ImageNet using DINO self-supervised learning method, in order to compare the ImageNet to the extracted dataset when using the same learning method. However, we must also acknowledge that there is difference in the architecture as well. In total, we compare 4 pre-trained feature extractors: ImageNet pre-trained WideResNet50 by supervised classification task, WideResNet50 trained using DINO self-supervised learning model on the selectively extracted dataset, WideResNet50 trained on randomly extracted dataset with DINO model, and ResNet50 trained on ImageNet with DINO model. In the figures \ref{fig:wd_instance}, \ref{fig:wd_anomaly} and \ref{fig:wd_full_pixel} we present Instance AUROC, Anomaly Pixel AUROC and Full Pixel AUROC scores respectively.
+
+Analysing the chart we can notice that in some select few cases the selective extraction reaches, and in some cases, outperforms the sota model. For example, for the Instance AUROC score of bottle, hazelnut and toothbrush classes there is an equal performance between sota feature extractor and the selective extraction method. And for the cases where the selective extraction outperforms the sota model, the examples can be: Full Pixel AUROC scores for carpet, hazelnut, toothbrush, transistor classes. However, we can not conclude that the performance gain is due to the efficacy of the selective extraction method, since there are cases where random extraction outperforms selective extraction. Nevertheless, it is clear that the contents, of the dataset from which features are learned, have a significant importance. Overall, the WideResNet50 pre-trained on ImageNet with supervised classification task stays the best choice for feature extraction.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/wd_instance.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:wd_instance}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/wd_full_pixel.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:wd_full_pixel}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/wd_anomaly.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:wd_anomaly}
+\end{figure}
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/wd_mean.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:wd_mean}
+\end{figure}
+
+\section{Selective extraction with LLM and VLM}

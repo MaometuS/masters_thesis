@@ -20,5 +20,13 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{33}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Medical Visual Question Answering (VQA) \cite {liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.}}{37}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Medical Visual Question Answering (VQA) \cite {liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.}}{39}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}}{39}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}}{40}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{43}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{44}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{48}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{50}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{51}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{52}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{53}{}%
 \addvspace {10\p@ }
