@@ -3,8 +3,20 @@
 
 \section{Conclusions}
 
-TBW
+This thesis focused on the analyzing the usage of pre-trained feature extractors in industrial anomaly detection and possibly ways of improving the accuracy of models by addressing the hypothesized bottleneck. We postulated that the generality of ImageNet dataset, on which most predominantly utilized pre-trained extractors trained on, could generate non-ideal features for the use in industrial settings. The postulation was motivated by the fact that ImageNet, in the considerable amount, consists of images that do not represent the industrial field nor do they relate to images that are commonly used in industrial tasks like MVTechAD. 
+
+We presented two methods for addressing the proposed issue: selective image extraction by using a CNN bi-class classifier, selecteive image extraction with the help of Large Language Models(LLM) and Vision Language Models(VLM). First method relies on bi-class CNN model that was trained on pre-constructed dataset with labels "industrial" and "non-industrial". Second method is based on the generation of descriptors using an LLM and filtering images by a CLIP cosine similarity score between the descriptors and samples. Both methods were applied to a large multi purpose dataset in order to generate a spelialized dataset for industrial tasks. Throughout the work in this thesis both supervised and self-supervised learning methods were engaged to achieve feature learning.
+
+After extensive series of experiments on the feature learned from extracted datasets, it was determined that the feature space of WideResNet, which is commonly used in contemporary industrial anomaly detection models, is surprisingly efficient and extremely resilient to scrutiny. Althoug we were successful in improving the performance in some categories of objects in the dataset MVTechAD, all attempts to outperform the state of the art pre-trained feature extractor in all categories were met with failure. However, we learned that the contents of the dataset from which features are learned from is very important.
+
+In conclusion, through experiments we determined that ImageNet based feature spaces are surprisingly efficient for industrial anomaly detection tasks, despite the general nature of ImageNet dataset. Performance increase through imporved feature space could still be achievable, but methods presented in this were proven to be inefficent in this task.
 
 \section{Future Improvements}
 
-TBW
+As was stated in the previous section, we were able to achive higher than sota accuracies in several categories while underperforming on others. This discovery demonstrates the feasibility of achieving overhead on the performance of the sota feature extractor. As per the selective extraction, desgning the extraction pipeline more meticilously might show a promising performance. Another method to achieve an extraction of a high quality industrial dataset might be the usage of LLMs on large scale, CLIP labeled datasets like LAION5B. For the dataset extraction methods, in our opinion, these seem to be the all possible options as of now.
+
+For the feature space based improvements of industrial anomaly detection models, an approach used in the IAD model RealNet could be extended and utilized as a component in pipeline of other models. The approach is the feature selection during training time which consists of building a large scale general feature space with high variety in the features, and performing the selection of features that are best for the specific use case during training time. However, development as testing of such hyptohesis might prove to be both very time and cost inefficent.
+
+Lastly, indtroduction of anomalous features into a features space during pre-training as as the IAD models GLASS and RealNet do during train time, could bring performance improvements. This could be achieved fine-tuning of the pre-trained feature extractor with artificially generated anomalies.
+
+We beleive that all the presented methods pose a potential for an improvement and needs further extensive investigation.

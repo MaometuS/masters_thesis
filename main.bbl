@@ -1,8 +1,25 @@
 \begin{thebibliography}{1}
 
-\bibitem{liu2021slake}
-Bo~Liu, Li-Ming Zhan, Li~Xu, Lin Ma, Yan Yang, and Xiao-Ming Wu.
-\newblock Slake: A semantically-labeled knowledge-enhanced dataset for medical visual question answering.
-\newblock In {\em 2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)}, pages 1650--1654. IEEE, 2021.
+\bibitem{Liu_2024}
+Jiaqi Liu, Guoyang Xie, Jinbao Wang, Shangnian Li, Chengjie Wang, Feng Zheng, and Yaochu Jin.
+\newblock Deep industrial image anomaly detection: A survey.
+\newblock {\em Machine Intelligence Research}, 21(1):104–135, January 2024.
+
+\bibitem{bergman2020deepnearestneighboranomaly}
+Liron Bergman, Niv Cohen, and Yedid Hoshen.
+\newblock Deep nearest neighbor anomaly detection, 2020.
+
+\bibitem{zhang2024realnetfeatureselectionnetwork}
+Ximiao Zhang, Min Xu, and Xiuzhuang Zhou.
+\newblock Realnet: A feature selection network with realistic synthetic anomaly for anomaly detection, 2024.
+
+\bibitem{Bergmann_2020}
+Bergmann Paul, Fauser Michael, Sattlegger David, and Steger Carsten.
+\newblock Uninformed students: Student-teacher anomaly detection with discriminative latent embeddings.
+\newblock In {\em 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}. IEEE, June 2020.
+
+\bibitem{mvtec2019}
+Paul Bergman, Michael Fauser, David Sattlegger, and Carsten Steger.
+\newblock Mvtec ad — a comprehensive real-world dataset for unsupervised anomaly detection, 2019.
 
 \end{thebibliography}

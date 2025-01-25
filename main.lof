@@ -1,32 +1,31 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Medical Visual Question Answering (VQA) \cite {liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.}}{2}{}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Architecture of the PatchCore model where one of the main components is the pre-trained feature extractor, here referred to as "Pretrained Encoder"}}{2}{}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Vision Transformer model which uses the Transformer encoder shown on the right to capture meaningful features from the images. The images have to be split into patches to transform them into a sequential data in order to make them to be able to be captured by Transformers.}}{9}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{10}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{12}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{13}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{16}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{17}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{11}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Residual block that allows for the assembly of deep computer vision models.}}{12}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Difference between Wide Residual Block and standard residual block, where the wide residual network has the width increase by the factor of k}}{13}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces architecture of a DINO model consiting of a student and a teacher model.}}{16}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces The process of Industrail Anomaly Detection}}{17}{}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Unsupervised anomaly detection pipeline.}}{18}{}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces PatchCore architecture.}}{19}{}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Samples from MVTech dataset.}}{20}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Samples from MVTech dataset.}}{20}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{23}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{25}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{27}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{28}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{30}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{32}{}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}}{33}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of how the pre-trained feature extractor is used in anomaly detection.}}{23}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visual comparison of the samples from a common anomaly detection dataset and ImageNet.}}{25}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The selective extraction pipeline.}}{27}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The construction process of the dataset for the bi-class classifier.}}{28}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The process of selective extraction using bi-class classifier.}}{29}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The pipeline of selective extraction using an LLM and a VLM.}}{32}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Medical Visual Question Answering (VQA) \cite {liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.}}{37}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}}{39}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}}{40}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{43}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{44}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{48}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{50}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{51}{}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{52}{}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{53}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces AUROC score is a area under ROC curve represented as a relationship of TPR and FPR.}}{35}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor.}}{37}{}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of different layers of VitB/16 model across all categories.}}{38}{}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of ResNet50 pre-trained with supervised learning and ResNet50 trained with DINO self-supervised model across all categories.}}{41}{}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The detailed explanation of the assembly of the dataset for the training of bi-class classifier.}}{42}{}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{46}{}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Instance AUROC scores across 15 objects in MVTecAD dataset.}}{48}{}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Full Pixel AUROC scores across 15 objects in MVTecAD dataset.}}{48}{}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Anaomaly Pixel AUROC scores across 15 objects in MVTecAD.}}{49}{}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{50}{}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{52}{}%
 \addvspace {10\p@ }

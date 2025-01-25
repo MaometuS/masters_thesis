@@ -6,7 +6,7 @@ In this chapter we will thoroughly discuss works related to the current thesis. 
 \label{vit}
 Introduction of Vision Transformers have presented a significantly different approach to computer vision tasks, where the standard approach of using convolutional neural networks have been replaced by transformer architecture. Until the point of introduction of vision transformers, transformer architecture was commonly used for natural language processing tasks. Transformer architecture leverages self-attention mechanism which has the ability to capture relationship between all parts of data with each other. In case of Vision Transformers, self-attention mechanism is able to capture the global context of the image rather than focusing on local features as CNN filters do.
 
-One of the main challenges when it comes to utilizing transformer architecture on visual data, is that it does not have the ability to capture spatial information as the traditional CNN models do. Moreover, transformers are originally equipped to work with sequential data like a stream of words which images are not. In order to make images a viable input for transformer, the image is split into constant size patches which are then embedded with positional encodings saving crucial spatial information. Transformer evaluates the relationships between all the patches using the self-attention mechanism. Thereafter, output from the transformer is used as an input for classification feed-forward network. In the case of Industrial Anomaly Detection, output from each transformer layer can be used as extracted features in anomaly detection models.
+One of the main challenges when it comes to utilizing transformer architecture on visual data, is that it does not have the ability to capture spatial information as the traditional CNN models do. Moreover, transformers are originally equipped to work with sequential data like a stream of words which images are not. In order to make images a viable input for transformer, the image is split into constant size patches which are then embedded with positional encodings saving crucial spatial information. Transformer evaluates the relationships between all the patches using the self-attention mechanism. Thereafter, output from the transformer is used as an input for classification feed-forward network. In the case of Industrial Anomaly Detection, output from each transformer layer can be used as extracted features in anomaly detection models. The diagram of the ViT architecture is shown on the figure \ref{fig:vit}.
 
 \begin{figure}[h]
 	\begin{center}
@@ -22,7 +22,7 @@ In the recent years Vision Transformers have been used extensively in self-super
 \label{cnn}
 For many years Convolutional Neural Networks have been the main architecture in the field of image processing due to their ability to capture spatial hierarchical features. They have been used efficiently in tasks such as image classification, semantic segmentation and object detection. When this architecture was introduced by Yann LeCunn and colleagues in 1980, it revolutionized the field showing significant increase in accuracy over the methods that used to be prevalent.
 
-The main novelty that Convolutional Neural Networks introduced were the convolutional and pooling layers of the network. Convolutional layer performs a "convolution" operation using kernels on the input image or, in the later layers, on the features extracted by the filters of the previous layer. In the first layers, local features are captured by convolution and in the later layers, pooling operation is performed, which serves as dimensionality reduction and extraction of global features from local ones. In more recent models convolution and pooling layers are also followed by normalization layers, which stabilizes and speeds up the training process. Between each layers of the model, some non-linearity function, which is usually ReLU activation function, is used to allow the model to learn to generalize more complex structures of data. Generally, the final stage of CNN architectures consist of fully-connected layers that maps the learned features to specific classes.
+The main novelty that Convolutional Neural Networks introduced were the convolutional and pooling layers of the network. Convolutional layer performs a "convolution" operation using kernels on the input image or, in the later layers, on the features extracted by the filters of the previous layer. In the first layers, local features are captured by convolution and in the later layers, pooling operation is performed, which serves as dimensionality reduction and extraction of global features from local ones. In more recent models convolution and pooling layers are also followed by normalization layers, which stabilizes and speeds up the training process. Between each layers of the model, some non-linearity function, which is usually ReLU activation function, is used to allow the model to learn to generalize more complex structures of data. Generally, the final stage of CNN architectures consist of fully-connected layers that maps the learned features to specific classes. To have a better understanding of the architecture please look at the figure \ref{fig:cnn}
 
 \begin{figure}[h]
 	\begin{center}
@@ -38,28 +38,28 @@ In spite of the fact that Vision Transformers have been emerging as the competit
 \label{resnet}
 Residual Network architectures are the subset of CNNs that are designed for deep learning scenarios and address one of the main challenges of training deep neural networks. The architecture presented a concept of skip connections which is a connection between layers that skips some layers(usually one) in between. This new addition allows models to have hundreds of layers, which was impossible due to the vanishing gradients problem.
 
-The usual ResNet model consists of residual blocks that have a skip connection at the input connecting directly to the output of the block. Skip connection facilitates the model to learn a residual mapping F(x) = H(x) - x, instead of the direct H(x) mapping from the input x, which allows the model to learn residuals or differences, rather than the one-to-one mapping. Each residual block contains multiple convolutional layers and activation layers. In most of the ResNet implementations, such as ResNet50, a bottleneck residual connection is used which consists of a 3x3 convolution layers in between two 1x1 convolution layers. All the innovation present in ResNet architecture allows for the training of multi layer deep models without the vanishing gradients problem and preserving the learned features across layers.
+The usual ResNet model consists of residual blocks that have a skip connection at the input connecting directly to the output of the block. Skip connection(figure \ref{fig:res_block}) facilitates the model to learn a residual mapping F(x) = H(x) - x, instead of the direct H(x) mapping from the input x, which allows the model to learn residuals or differences, rather than the one-to-one mapping. Each residual block contains multiple convolutional layers and activation layers. In most of the ResNet implementations, such as ResNet50, a bottleneck residual connection is used which consists of a 3x3 convolution layers in between two 1x1 convolution layers. All the innovation present in ResNet architecture allows for the training of multi layer deep models without the vanishing gradients problem and preserving the learned features across layers.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{Chapter_2/resnet.png}
 	\end{center}
-	\caption{Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}
-	\label{fig:cnn}
+	\caption{Residual block that allows for the assembly of deep computer vision models.}
+	\label{fig:res_block}
 \end{figure}
 
 Residual Networks emerged as a dominant model to be used as feature extractors in industrial anomaly detection models. This choice is driven mainly by empirical evidence to their efficiency. However, we can also see that in ResNet models the advantages of CNNs, such as capturing local features and spatial hierarchies, are amplified by allowing us to train larger size CNN models. Advantages which might make CNNs a preferable choice as feature extractors for IAD models.
 
 \subsection{Wide Residual Neural Networks}
 \label{wideresnet}
-Wide Residual Networks are enhancement upon the regular ResNet architecture, which focus on increasing the width of the model instead of the depth. The main point of this improvement is in the residual blocks where the channels of convolutions are increase by some factor, allowing the model to have increase representational capacity while maintaining the ability to train deep networks. Increased channel size also allows Wide ResNets to have improved gradient flow which enhances the models capability to learn from large complex datasets. The enhancements allow Wide ResNets to have higher capacity to learn fine-grained details which makes this type of architecture a suitable choice for usage as feature extractors in IAD models.
+Wide Residual Networks are enhancement upon the regular ResNet architecture, which focus on increasing the width of the model instead of the depth. The main point of this improvement is in the residual blocks where the channels of convolutions are increase by some factor(figure \ref{fig:wide_resnet}), allowing the model to have increase representational capacity while maintaining the ability to train deep networks. Increased channel size also allows Wide ResNets to have improved gradient flow which enhances the models capability to learn from large complex datasets. The enhancements allow Wide ResNets to have higher capacity to learn fine-grained details which makes this type of architecture a suitable choice for usage as feature extractors in IAD models.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_2/wide_resnet.png}
 	\end{center}
-	\caption{Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}
-	\label{fig:cnn}
+	\caption{Difference between Wide Residual Block and standard residual block, where the wide residual network has the width increase by the factor of k}
+	\label{fig:wide_resnet}
 \end{figure}
 
 \section{Unsupervised Learning}
@@ -76,27 +76,26 @@ As have been stated the key component of self-supervised learning is the generat
 \label{dino}
 DINO(from distillation with no labels) is a robust self-supervised learning model that was introduced by Facebook AI team that uses enhanced knowledge distillation pipeline to learn useful representations from an unlabeled large image datasets. The model achieves high accuracy on top-1 classification task on the ImageNet dataset, specifically 79.1 percent when training the model ViT-S/14 and higher 82.1\% when used with the ViT-B/14 model. DINO models ability to train both Vision Transformer and CNN based model and its high efficiency makes the model an excellent choice for the purposes of this thesis.
 
-In its training process DINO utilizes the teacher-student architecture where student is trained to align its output to the output of the teacher model. Both student and teacher models trained using the same model architecture but using different parameters. The key point of the DINO model is that the teacher model is trained using the EMA - exponential moving average of the student model in order to guarantee the stability during training. Training process itself consists of passing an input image with random transformations picked from a constant set of transformations, to teacher and student models and adjusting the student models output to the teacher models output using cross-entropy loss function. During such a training process, the student model learn invariant and meaningful features from the input.
+In its training process DINO utilizes the teacher-student architecture where student is trained to align its output to the output of the teacher model. Both student and teacher models trained using the same model architecture but using different parameters. The key point of the DINO model is that the teacher model is trained using the EMA - exponential moving average of the student model in order to guarantee the stability during training. Training process itself consists of passing an input image with random transformations picked from a constant set of transformations, to teacher and student models and adjusting the student models output to the teacher models output using cross-entropy loss function. During such a training process, the student model learn invariant and meaningful features from the input. The architecture is shown in the figure \ref{fig:dino}
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{Chapter_2/dino.png}
 	\end{center}
-	\caption{Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}
-	\label{fig:cnn}
+	\caption{architecture of a DINO model consiting of a student and a teacher model.}
+	\label{fig:dino}
 \end{figure}
 
 \section{Industrial Anomaly Detection}
 \label{iad}
-Industrial Anomaly Detection has become the irreplaceable part of various manufacturing processes, allowing to detect any deviations from standards of manufacturing and preventing defective products from potentially reaching the output. Anomalies of varying kind expected to happen in every industrial processes due to different reasons like, wear and tear, software errors and malfunction of devices. Industrial Anomaly Detection methods allow us monitor the manufacturing pipeline and to anticipate such defects, followed with swift corrections. This allows for increased stability of manufacturing, improved quality control, mediating costly defects, minimizing downtime and enhancing efficiency.
+Industrial Anomaly Detection has become the irreplaceable part of various manufacturing processes, allowing to detect any deviations from standards of manufacturing and preventing defective products from potentially reaching the output. Anomalies of varying kind expected to happen in every industrial processes due to different reasons like, wear and tear, software errors and malfunction of devices. Industrial Anomaly Detection methods allow us monitor the manufacturing pipeline and to anticipate such defects, followed with swift corrections. This allows for increased stability of manufacturing, improved quality control, mediating costly defects, minimizing downtime and enhancing efficiency. For the visual explanation, refer to \ref{fig:iad}
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{Chapter_2/iad.png}
 	\end{center}
-	\caption{Convolutional Neural Network consisting of convolution and subsampling layers. Its architecture allows for the efficient capture of spatial features, which can explain its prominence in anomaly detection models.}
-	\captionsetup{belowskip=0pt}
-	\label{fig:cnn}
+	\caption{The process of Industrail Anomaly Detection}
+	\label{fig:iad}
 \end{figure}
 
 Contemporary Industrial Anomaly Detection methods heavily rely on deep learning computer vision models. Variety of computer vision models like convolutional neural networks, vision transformers and autoencoders can be utilized to efficiently implement industrial anomaly detection in real use case scenarios where data from visual sensors such as cameras. These models posses the ability to learn complex visual representation from high-dimensional imagery data, allowing IAD tasks to be performed with high accuracy and reliability. Over the recent years the field of Industrail Anomaly Detection witnessed a lot of improvements, especially in the field of Unsupervised Industrial Anomaly Detection where there is a scarcity of anomalous data. 
@@ -104,14 +103,14 @@ Contemporary Industrial Anomaly Detection methods heavily rely on deep learning 
 \clearpage
 \subsection{Unsupervised Industrial Anomaly Detection}
 \label{unsupervised iad}
-Unsupervised Industrial Anomaly Detection leverage unsupervised deep learning techniques in order to learn any deviations from the nominal patterns it the provided input. In IAD field unsupervised learning is vital because labeled anomalous images are extremely scarce or non-existent. There are multiple types of architectures that can be engaged to implement unsupervisded iad models, including architectures like autoencoders, clustering and various statistical techniques are common to be used. As an example, PatchCore model uses memory-bank approach opting to save features extracted by pre-trained backbone model with some aggregation operations while on the inference performing kNN over the saved features and extracted features of the test sample. Another model called SimpleNet trains a discriminator with synthetically generated anomalies on the features of the nominal samples. There are also reconstruction based models like RealNet which utilized auto-encoders on the layers of the pre-trained feature extractor model. In this thesis, we use these three models to test different feature spaces on.
+Unsupervised Industrial Anomaly Detection leverage unsupervised deep learning techniques in order to learn any deviations from the nominal patterns it the provided input. In IAD field unsupervised learning is vital because labeled anomalous images are extremely scarce or non-existent. There are multiple types of architectures that can be engaged to implement unsupervisded iad models, including architectures like autoencoders, clustering and various statistical techniques are common to be used. As an example, PatchCore model uses memory-bank approach opting to save features extracted by pre-trained backbone model with some aggregation operations while on the inference performing kNN over the saved features and extracted features of the test sample. Another model called SimpleNet trains a discriminator with synthetically generated anomalies on the features of the nominal samples. There are also reconstruction based models like RealNet which utilized auto-encoders on the layers of the pre-trained feature extractor model. In this thesis, we use these three models to test different feature spaces on. Refer to figure \ref{fig:uiad} for the visual representation of the Unsupervised IAD process.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{Chapter_2/uiad.png}
 	\end{center}
 	\caption{Unsupervised anomaly detection pipeline.}
-	\label{fig:cnn}
+	\label{fig:uiad}
 \end{figure}
 
 \clearpage
@@ -119,24 +118,15 @@ Unsupervised Industrial Anomaly Detection leverage unsupervised deep learning te
 \label{patchcore}
 The PatchCore industrial detection model is designed to excel in identifying anomalies in visual data for industrial applications. The methodology behind PatchCore involves several key steps. Initially, the model utilizes pre-trained convolutional neural networks (CNNs) to extract high-dimensional feature representations from input images. These features are then divided into smaller patches, which are processed individually. The core idea of PatchCore is to leverage these patches for local anomaly detection, ensuring that even small, subtle defects can be detected. The model applies an anomaly scoring mechanism to each patch, comparing it to a reference distribution of normal patches derived from a training dataset. This scoring helps in distinguishing between normal and anomalous regions within an image. Additionally, PatchCore incorporates a memory bank of normal patches, enabling efficient and accurate comparison during inference. By focusing on local patches rather than the entire image, PatchCore enhances the precision and reliability of anomaly detection, making it well-suited for diverse industrial inspection tasks where fine-grained anomalies are critical to detect.
 
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.9\linewidth]{Chapter_2/patchcore.png}
-	\end{center}
-	\caption{PatchCore architecture.}
-	\label{fig:cnn}
-\end{figure}
-
-\clearpage
 \section{MVTechAD}
 \label{mvtech}
-The MVTec Anomaly Detection (MVTec AD) dataset is a comprehensive benchmark specifically designed for evaluating anomaly detection methods in industrial inspection. It comprises over 5,000 high-resolution images across fifteen different object and texture categories, each containing defect-free training images and a test set with various types of defects. The dataset provides pixel-precise annotations of all anomalies, enabling precise evaluation and comparison of different anomaly detection techniques. MVTec AD is widely used in the research community to advance and validate new methods, ensuring they are robust and effective for real-world industrial applications.
+The MVTec Anomaly Detection (MVTec AD) dataset is a comprehensive benchmark specifically designed for evaluating anomaly detection methods in industrial inspection. It comprises over 5,000 high-resolution images across fifteen different object and texture categories, each containing defect-free training images and a test set with various types of defects. The dataset provides pixel-precise annotations of all anomalies, enabling precise evaluation and comparison of different anomaly detection techniques. MVTec AD is widely used in the research community to advance and validate new methods, ensuring they are robust and effective for real-world industrial applications. Samples from the dataset are displayed in the figure \ref{fig:mvtec}.
 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.7\linewidth]{Chapter_2/mvtec.jpg}
 	\end{center}
 	\caption{Samples from MVTech dataset.}
-	\label{fig:cnn}
+	\label{fig:mvtec}
 \end{figure}
 

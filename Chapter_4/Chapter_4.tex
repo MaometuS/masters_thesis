@@ -22,7 +22,7 @@ For all the experiments, in order to measure the accuracy of the models being te
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{Chapter_4/auroc.png}
 	\end{center}
-	\caption{Medical Visual Question Answering (VQA) \cite{liu2021slake} is a task where the model receives medical images and corresponding questions as input and produces accurate answers as the output.}
+	\caption{AUROC score is a area under ROC curve represented as a relationship of TPR and FPR.}
 	\label{fig:auroc}
 \end{figure}
 
@@ -71,7 +71,7 @@ In the first experiment we will be analysing the difference of the layers of vis
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/vit.png}
 	\end{center}
-	\caption{Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}
+	\caption{Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor.}
 	\label{fig:vit_layers}
 \end{figure}
 
@@ -82,7 +82,7 @@ In the following experiment we show that WideResNet50 architecture has an overhe
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/resnet_vs_wideresnet.png}
 	\end{center}
-	\caption{Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor}
+	\caption{Mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of different layers of VitB/16 model across all categories.}
 	\label{fig:resnet_vs_wideresnet}
 \end{figure}
 
@@ -165,7 +165,7 @@ The figure \ref{fig:dino_test} shows the mean scores Instance AUROC, Full Pixel 
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/dino.png}
 	\end{center}
-	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\caption{Comparison of mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of ResNet50 pre-trained with supervised learning and ResNet50 trained with DINO self-supervised model across all categories.}
 	\label{fig:dino_test}
 \end{figure}
 
@@ -179,7 +179,7 @@ We are going to put together a dataset in order to train a CNN bi-class classifi
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/bi_class_prep.png}
 	\end{center}
-	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\caption{The detailed explanation of the assembly of the dataset for the training of bi-class classifier.}
 	\label{fig:bi_class_prep}
 \end{figure}
 
@@ -318,7 +318,7 @@ Analysing the chart we can notice that in some select few cases the selective ex
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/wd_instance.png}
 	\end{center}
-	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\caption{Instance AUROC scores across 15 objects in MVTecAD dataset.}
 	\label{fig:wd_instance}
 \end{figure}
 
@@ -326,7 +326,7 @@ Analysing the chart we can notice that in some select few cases the selective ex
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/wd_full_pixel.png}
 	\end{center}
-	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\caption{Full Pixel AUROC scores across 15 objects in MVTecAD dataset.}
 	\label{fig:wd_full_pixel}
 \end{figure}
 
@@ -334,7 +334,7 @@ Analysing the chart we can notice that in some select few cases the selective ex
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{Chapter_4/wd_anomaly.png}
 	\end{center}
-	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\caption{Anaomaly Pixel AUROC scores across 15 objects in MVTecAD.}
 	\label{fig:wd_anomaly}
 \end{figure}
 
@@ -347,3 +347,74 @@ Analysing the chart we can notice that in some select few cases the selective ex
 \end{figure}
 
 \section{Selective extraction with LLM and VLM}
+Now we will delve into the discussion of the selective extraction method leveraging Large Language Models(LLM) and Vision Language Models(VLM). The LLM of choice for this thesis is GPT-3 and for the VLM, we utilize CLIP model. We follow the pipeline described in the section \ref{sec:llm_and_vlm_extraction}, namely, using GPT-3 model we generate realated suplimentary keywords for 15 classes in the MVTechAD dataset. Further, we generate descriptions using the suplimentary keywords created in the previous step. The total number of keywords and descriptions generates is given in the table \ref{tab:gpt_keywords}.
+
+Next step in the extraction process is to calculate cosine similarities between images and generated descriptions, followed by filtering the samples by the cosine similarity scores that pass the threshold of 0.28. Following code is used to execute this step:
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\begin{lstlisting}
+def clipTest(file, descriptions):
+  image = Image.open(file).convert("RGB")
+  image_input = torch.tensor(np.stack([preprocess(image)])).cuda()
+  desc_tokens = clip.tokenize(descriptions).cuda()
+  with torch.no_grad():
+      image_features = model.encode_image(image_input).float()
+      text_features = model.encode_text(desc_tokens).float()
+      image_features /= image_features.norm(dim=-1, keepdim=True)
+      text_features /= text_features.norm(dim=-1, keepdim=True)
+      similarity = text_features @ image_features.T
+
+      return similarity.max() > 0.28
+\end{lstlisting}
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lll}
+\hline 
+\textbf{Class} & \textbf{Number of keywords} & \textbf{Number of descriptions} \\
+\hline\hline
+Bottle & 45 & 40 \\
+Cable & 52 & 51 \\
+Capsule & 26 & 26 \\
+Carpet & 62 & 60 \\
+Grid & 43 & 44 \\
+Hazelnut & 26 & 29 \\
+Leather & 26 & 28 \\
+Metal Nut & 47 & 61 \\
+Pill & 43 & 27 \\
+Screw & 20 & 37 \\
+Tile & 68 & 122 \\
+Toothbrush & 63 & 107 \\
+Transistor & 20 & 29 \\
+Wood & 30 & 25 \\
+Zipper & 17 & 38 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Numbers of keywords and descriptions generated for each object in the MVTecAD dataset.}
+\label{tab:gpt_keywords}
+\end{table}
+
+Because of the nature of extaction, specifically the use of keywords, we can easily construct a labeled dataset using base keywords as classes for supervised learning. For feature learning, we fine-tune ImageNet pre-trained WideResNet50 model. We use the same recipe as training the CNN bi-class classifier, with difference being number of output nodes and number of epochs. The model is fine tuned for 100 epochs on 549 197 samples extracted from YFCC100M. As displayed in the figure \ref{fig:llm_clip_mean}, this method does not prove to be effective in generating suitable feature spaces. Nevertheless, it should be mentioned that there is a difference in the number of samples between ImageNet and the extracted dataset. Therefore, it should be considered that with the higher number of samples, there is a possibility of achieving a higher performance.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1.0\linewidth]{Chapter_4/llm_clip_mean.png}
+	\end{center}
+	\caption{Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}
+	\label{fig:llm_clip_mean}
+\end{figure}
+
+In this chapter we looked at the empirical analysis on the hypothesis stipulated in the Chapter \ref{chapter:ch3}. In the next chapter, we will draw conclusions based upon the findings discovered througout the research done in this thesis.
