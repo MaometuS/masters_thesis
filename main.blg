@@ -11,44 +11,46 @@ A level-1 auxiliary file: References/thesis_ref.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: Acknowledge/Acknowledgments.aux
 Database file #1: References/references.bib
-You've used 5 entries,
+Warning--I didn't find a database entry for "dion"
+You've used 39 entries,
             1791 wiz_defined-function locations,
-            480 strings with 4749 characters,
-and the built_in function-call counts, 1013 in all, are:
-= -- 66
-> -- 73
-< -- 0
-+ -- 26
-- -- 21
-* -- 69
-:= -- 170
-add.period$ -- 13
-call.type$ -- 5
-change.case$ -- 5
+            648 strings with 13029 characters,
+and the built_in function-call counts, 13181 in all, are:
+= -- 1136
+> -- 756
+< -- 24
++ -- 266
+- -- 227
+* -- 831
+:= -- 1939
+add.period$ -- 122
+call.type$ -- 39
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 36
-empty$ -- 106
-format.name$ -- 21
-if$ -- 221
+cite$ -- 39
+duplicate$ -- 621
+empty$ -- 1112
+format.name$ -- 227
+if$ -- 3057
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 2
-newline$ -- 25
-num.names$ -- 5
-pop$ -- 28
+int.to.str$ -- 39
+missing$ -- 36
+newline$ -- 200
+num.names$ -- 39
+pop$ -- 173
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 17
+skip$ -- 468
 stack$ -- 0
-substring$ -- 27
-swap$ -- 6
-text.length$ -- 0
+substring$ -- 892
+swap$ -- 303
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 6
-width$ -- 6
-write$ -- 48
+while$ -- 108
+width$ -- 41
+write$ -- 423
+(There was 1 warning)

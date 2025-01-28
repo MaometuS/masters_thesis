@@ -1,25 +1,200 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{Liu_2024}
-Jiaqi Liu, Guoyang Xie, Jinbao Wang, Shangnian Li, Chengjie Wang, Feng Zheng, and Yaochu Jin.
-\newblock Deep industrial image anomaly detection: A survey.
-\newblock {\em Machine Intelligence Research}, 21(1):104–135, January 2024.
+\bibitem{patchcore}
+Karsten Roth, Latha Pemula, Joaquin Zepeda, Bernhard Scholkopf, Thomas Brox, and Peter Gehler.
+\newblock Towards total recall in industrial anomaly detection.
+\newblock In {\em Proceedings of the 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 14298--14308, 2021.
+
+\bibitem{transformer}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, \L{}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock In {\em Proceedings of the 31st International Conference on Neural Information Processing Systems}, NIPS'17, pages 6000--6010. Curran Associates Inc., 2017.
+
+\bibitem{vit}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at scale.
+\newblock {\em ICLR}, 2021.
+
+\bibitem{lenet}
+Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock {\em Proceedings of the IEEE}, pages 2278--2324, 1998.
+
+\bibitem{resnet}
+Kaiming He, X.~Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In {\em Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 770--778, 2015.
+
+\bibitem{wideresnet}
+Sergey Zagoruyko and Nikos Komodakis.
+\newblock Wide residual networks.
+\newblock {\em arXiv preprint arXiv:1605.07146}, 2017.
+
+\bibitem{pytorch_wide}
+Sergey Zagoruyko.
+\newblock Pytorch wideresnet web page.
+\newblock \url{https://pytorch.org/hub/pytorch_vision_wide_resnet/}.
+\newblock Accessed January 25, 2025.
+
+\bibitem{dino}
+Mathilde Caron, Hugo Touvron, Ishan Misra, Hervé Jegou, Julien Mairal, Piotr Bojanowski, and Armand Joulin.
+\newblock Emerging properties in self-supervised vision transformers.
+\newblock In {\em Proceedings of the 2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, pages 9630--9640, 2021.
+
+\bibitem{mvtecad}
+Paul Bergmann, Michael Fauser, David Sattlegger, and Carsten Steger.
+\newblock Mvtec ad — a comprehensive real-world dataset for unsupervised anomaly detection.
+\newblock In {\em Proceedings of the 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 9584--9592, 2019.
 
 \bibitem{bergman2020deepnearestneighboranomaly}
 Liron Bergman, Niv Cohen, and Yedid Hoshen.
-\newblock Deep nearest neighbor anomaly detection, 2020.
+\newblock Deep nearest neighbor anomaly detection.
+\newblock {\em arXiv preprint arXiv:2002.10445}, 2020.
 
-\bibitem{zhang2024realnetfeatureselectionnetwork}
+\bibitem{imagenet}
+Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander~C. Berg, and Li~Fei-Fei.
+\newblock Imagenet large scale visual recognition challenge.
+\newblock {\em International Journal of Computer Vision}, pages 211--252, 2015.
+
+\bibitem{auroc}
+Arya Tafvizi, Besim Avci, and Mukund Sundararajan.
+\newblock Attributing auc-roc to analyze binary classifier performance.
+\newblock {\em arXiv preprint arXiv:2205.11781}, 2022.
+
+\bibitem{iad_survey}
+Jiaqi Liu, Guoyang Xie, Jinbao Wang, Shangnian Li, Chengjie Wang, Feng Zheng, and Yaochu Jin.
+\newblock Deep industrial image anomaly detection: A survey.
+\newblock {\em Machine Intelligence Research}, pages 104--135, 2024.
+
+\bibitem{realnet}
 Ximiao Zhang, Min Xu, and Xiuzhuang Zhou.
-\newblock Realnet: A feature selection network with realistic synthetic anomaly for anomaly detection, 2024.
+\newblock Realnet: A feature selection network with realistic synthetic anomaly for anomaly detection.
+\newblock In {\em Proceedings of the 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 16699--16708, 2024.
 
-\bibitem{Bergmann_2020}
-Bergmann Paul, Fauser Michael, Sattlegger David, and Steger Carsten.
-\newblock Uninformed students: Student-teacher anomaly detection with discriminative latent embeddings.
-\newblock In {\em 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}. IEEE, June 2020.
+\bibitem{uiad_survey}
+Yajie Cui, Zhaoxiang Liu, and Shiguo Lian.
+\newblock A survey on unsupervised anomaly detection algorithms for industrial images.
+\newblock {\em IEEE Access}, pages 55297--55315, 2023.
 
-\bibitem{mvtec2019}
-Paul Bergman, Michael Fauser, David Sattlegger, and Carsten Steger.
-\newblock Mvtec ad — a comprehensive real-world dataset for unsupervised anomaly detection, 2019.
+\bibitem{pre_trained}
+Benyamin Ghojogh, Maria~N. Samad, Sayema~Asif Mashhadi, Tania Kapoor, Wahab Ali, Fakhri Karray, and Mark Crowley.
+\newblock Feature selection and feature extraction in pattern analysis: A literature review.
+\newblock {\em arXiv preprint arXiv:1905.02845}, 2019.
+
+\bibitem{pre_trained_iad}
+Lars Heckler, Rebecca König, and Paul Bergmann.
+\newblock Exploring the importance of pretrained feature extractors for unsupervised anomaly detection and localization.
+\newblock In {\em Proceedings of 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, pages 2917--2926, 2023.
+
+\bibitem{knn}
+Evelyn Fix and J.~L. Hodges.
+\newblock Discriminatory analysis. nonparametric discrimination: Consistency properties.
+\newblock {\em International Statistical Review / Revue Internationale de Statistique}, pages 238--247, 1989.
+
+\bibitem{autoencoder}
+Dor Bank, Noam Koenigstein, and Raja Giryes.
+\newblock {\em Machine Learning for Data Science Handbook: Data Mining and Knowledge Discovery Handbook}, pages 353--374.
+\newblock Springer International Publishing, 2023.
+
+\bibitem{yfcc100m}
+Bart Thomee, David~A. Shamma, Gerald Friedland, Benjamin Elizalde, Karl Ni, Douglas Poland, Damian Borth, and Li-Jia Li.
+\newblock Yfcc100m: the new data in multimedia research.
+\newblock {\em Communications of the ACM}, pages 64--73, 2016.
+
+\bibitem{laion400m}
+Christoph Schuhmann, Richard Vencu, Romain Beaumont, Robert Kaczmarczyk, Clayton Mullis, Aarush Katta, Theo Coombes, Jenia Jitsev, and Aran Komatsuzaki.
+\newblock {LAION-400M:} open dataset of clip-filtered 400 million image-text pairs.
+\newblock {\em arXiv preprint arXiv:2111.02114}, 2021.
+
+\bibitem{laion5b}
+Christoph Schuhmann, Romain Beaumont, Richard Vencu, Cade~W Gordon, Ross Wightman, Mehdi Cherti, Theo Coombes, Aarush Katta, Clayton Mullis, Mitchell Wortsman, Patrick Schramowski, Srivatsa~R Kundurthy, Katherine Crowson, Ludwig Schmidt, Robert Kaczmarczyk, and Jenia Jitsev.
+\newblock {LAION}-5b: An open large-scale dataset for training next generation image-text models.
+\newblock In {\em Proceedings of the Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track}, 2022.
+
+\bibitem{self_supervised_survey}
+Jie Gui, Tuo Chen, Jing Zhang, Qiong Cao, Zhe Sun, Haoran Luo, and Dacheng Tao.
+\newblock A survey on self-supervised learning: Algorithms, applications, and future trends.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, pages 9052--9071, 2023.
+
+\bibitem{unsupervised_survey}
+Yanbei Chen, Massimiliano Mancini, Xiatian Zhu, and Zeynep Akata.
+\newblock Semi-supervised and unsupervised deep visual learning: A survey.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, pages 1327--1347, 2022.
+
+\bibitem{natural_language}
+Daniel~W. Otter, Julian~R. Medina, and Jugal~K. Kalita.
+\newblock A survey of the usages of deep learning for natural language processing.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems}, pages 604--624, 2021.
+
+\bibitem{contrastive}
+Phuc~H. Le-Khac, Graham Healy, and Alan~F. Smeaton.
+\newblock Contrastive representation learning: A framework and review.
+\newblock {\em IEEE Access}, pages 193907--193934, 2020.
+
+\bibitem{vit_contrastive}
+Hua-Bao Ling, Bowen Zhu, Dong Huang, Ding-Hua Chen, Chang-Dong Wang, and Jian-Huang Lai.
+\newblock Vision transformer for contrastive clustering.
+\newblock {\em arXiv preprint arXiv:2206.12925}, 2022.
+
+\bibitem{cnn_survey}
+Zewen Li, Fan Liu, Wenjie Yang, Shouheng Peng, and Jun Zhou.
+\newblock A survey of convolutional neural networks: Analysis, applications, and prospects.
+\newblock {\em IEEE Transactions on Neural Networks and Learning Systems}, pages 6999--7019, 2020.
+
+\bibitem{batchnorm}
+Sergey Ioffe and Christian Szegedy.
+\newblock Batch normalization: accelerating deep network training by reducing internal covariate shift.
+\newblock In {\em Proceedings of the 32nd International Conference on International Conference on Machine Learning - Volume 37}, ICML'15, pages 448--456, 2015.
+
+\bibitem{self_patch}
+Sukmin Yun, Hankook Lee, Jaehyung Kim, and Jinwoo Shin.
+\newblock Patch-level representation learning for self-supervised vision transformers.
+\newblock In {\em Proceedings of the 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 8344--8353, 2022.
+
+\bibitem{glass}
+Qiyu Chen, Huiyuan Luo, Chengkan Lv, and Zhengtao Zhang.
+\newblock A unified anomaly synthesis strategy with gradient ascent for industrial anomaly detection and localization.
+\newblock In {\em Proceedings of the Computer Vision - ECCV 2024: 18th European Conference, Milan, Italy}, pages 37--54. Springer-Verlag, 2024.
+
+\bibitem{llm_survey}
+Shervin Minaee, Tomas Mikolov, Narjes Nikzad, Meysam Chenaghlu, Richard Socher, Xavier Amatriain, and Jianfeng Gao.
+\newblock Large language models: A survey, 2024.
+
+\bibitem{vlm_survey}
+Jingyi Zhang, Jiaxing Huang, Sheng Jin, and Shijian Lu.
+\newblock Vision-language models for vision tasks: A survey.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence}, pages 5625--5644, 2024.
+
+\bibitem{lfw}
+Rafael Redondo and Jaume Gibert.
+\newblock Extended labeled faces in-the-wild (elfw): Augmenting classes for face segmentation.
+\newblock {\em arXiv preprint arXiv:2006.13980}, 2020.
+
+\bibitem{yolo}
+Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi.
+\newblock You only look once: Unified, real-time object detection.
+\newblock In {\em Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, pages 779--788, 2016.
+
+\bibitem{gpt3}
+Tom~B. Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel~M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei.
+\newblock Language models are few-shot learners.
+\newblock In {\em Proceedings of the 34th International Conference on Neural Information Processing Systems}, NIPS '20. Curran Associates Inc., 2020.
+
+\bibitem{clip}
+Alec Radford, Jong~Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, Gretchen Krueger, and Ilya Sutskever.
+\newblock Learning transferable visual models from natural language supervision.
+\newblock In {\em Proceedings of the International Conference on Machine Learning}, 2021.
+
+\bibitem{pytorch_resnet_recipe}
+Vasilis Vryniotis.
+\newblock Pytorch: How to train state-of-the-art models using torchvision's latest primitives web page.
+\newblock \url{https://pytorch.org/blog/how-to-train-state-of-the-art-models-using-torchvision-latest-primitives/}.
+\newblock Accessed January 25, 2025.
+
+\bibitem{dino_resnet_recipe}
+Facebook Research.
+\newblock Dino github web page.
+\newblock \url{https://dl.fbaipublicfiles.com/dino/dino_resnet50_pretrain/args.txt}.
+\newblock Accessed January 25, 2025.
 
 \end{thebibliography}

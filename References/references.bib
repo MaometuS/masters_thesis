@@ -1,67 +1,334 @@
-@article{vaswani2017attention,
-  title={Attention is all you need},
-  author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, {\L}ukasz and Polosukhin, Illia},
-  journal={Advances in neural information processing systems},
-  year={2017}
+@inproceedings{transformer,
+author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, \L{}ukasz and Polosukhin, Illia},
+title = {Attention is all you need},
+year = {2017},
+publisher = {Curran Associates Inc.},
+booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+pages = {6000--6010},
+series = {NIPS'17}
 }
 
-@article{dosovitskiy2021imageworth16x16words,
+@article{vit,
       title={An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale}, 
       author={Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
-      year={2021},
-      eprint={2010.11929},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2010.11929}, 
+      journal={ICLR},
+      year={2021}
 }
 
-@article{Liu_2024,
+@article{iad_survey,
    title={Deep Industrial Image Anomaly Detection: A Survey},
-   volume={21},
-   ISSN={2731-5398},
-   url={http://dx.doi.org/10.1007/s11633-023-1459-z},
-   DOI={10.1007/s11633-023-1459-z},
-   number={1},
    journal={Machine Intelligence Research},
    publisher={Springer Science and Business Media LLC},
    author={Liu, Jiaqi and Xie, Guoyang and Wang, Jinbao and Li, Shangnian and Wang, Chengjie and Zheng, Feng and Jin, Yaochu},
    year={2024},
-   month=jan, pages={104–135} }
+   pages={104--135} 
+   }
 
-   @misc{bergman2020deepnearestneighboranomaly,
-      title={Deep Nearest Neighbor Anomaly Detection}, 
-      author={Liron Bergman and Niv Cohen and Yedid Hoshen},
-      year={2020},
-      eprint={2002.10445},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2002.10445}, 
-}
-
-@misc{zhang2024realnetfeatureselectionnetwork,
-      title={RealNet: A Feature Selection Network with Realistic Synthetic Anomaly for Anomaly Detection}, 
-      author={Ximiao Zhang and Min Xu and Xiuzhuang Zhou},
-      year={2024},
-      eprint={2403.05897},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2403.05897}, 
+@article{bergman2020deepnearestneighboranomaly,
+title={Deep Nearest Neighbor Anomaly Detection}, 
+author={Liron Bergman and Niv Cohen and Yedid Hoshen},
+year={2020},
+journal={arXiv preprint arXiv:2002.10445},
 }
 
 @inproceedings{Bergmann_2020,
    title={Uninformed Students: Student-Teacher Anomaly Detection With Discriminative Latent Embeddings},
-   url={http://dx.doi.org/10.1109/CVPR42600.2020.00424},
-   DOI={10.1109/cvpr42600.2020.00424},
-   booktitle={2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+   booktitle={Proceedings of the 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
    publisher={IEEE},
    author={Bergmann Paul and Fauser Michael and Sattlegger David and Steger Carsten},
-   year={2020},
-   month=jun }
+   year={2020}
+   }
 
-@misc{mvtec2019,
-  author = {Paul Bergman and Michael Fauser and David Sattlegger and Carsten Steger},
-  journal = {Computer Vision and Pattern Recognition},
-  title = {MVTec AD — A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection},
-  year = {2019},
-  url = {https://openaccess.thecvf.com/content_CVPR_2019/papers/Bergmann_MVTec_AD_--_A_Comprehensive_Real-World_Dataset_for_Unsupervised_Anomaly_CVPR_2019_paper.pdf}
+@INPROCEEDINGS{mvtecad,
+  author={Bergmann, Paul and Fauser, Michael and Sattlegger, David and Steger, Carsten},
+  booktitle={Proceedings of the 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={MVTec AD — A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection}, 
+  year={2019},
+  pages={9584-9592},
+}
+
+@article{imagenet,
+author = {Russakovsky, Olga and Deng, Jia and Su, Hao and Krause, Jonathan and Satheesh, Sanjeev and Ma, Sean and Huang, Zhiheng and Karpathy, Andrej and Khosla, Aditya and Bernstein, Michael and Berg, Alexander C. and Fei-Fei, Li},
+title = {ImageNet Large Scale Visual Recognition Challenge},
+year = {2015},
+publisher = {Kluwer Academic Publishers},
+journal = {International Journal of Computer Vision},
+pages = {211--252},
+}
+
+@inproceedings{laion5b,
+title={{LAION}-5B: An open large-scale dataset for training next generation image-text models},
+author={Christoph Schuhmann and Romain Beaumont and Richard Vencu and Cade W Gordon and Ross Wightman and Mehdi Cherti and Theo Coombes and Aarush Katta and Clayton Mullis and Mitchell Wortsman and Patrick Schramowski and Srivatsa R Kundurthy and Katherine Crowson and Ludwig Schmidt and Robert Kaczmarczyk and Jenia Jitsev},
+booktitle={Proceedings of the Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+year={2022},
+}
+
+@article{laion400m,
+  author       = {Christoph Schuhmann and
+                  Richard Vencu and
+                  Romain Beaumont and
+                  Robert Kaczmarczyk and
+                  Clayton Mullis and
+                  Aarush Katta and
+                  Theo Coombes and
+                  Jenia Jitsev and
+                  Aran Komatsuzaki},
+  title        = {{LAION-400M:} Open Dataset of CLIP-Filtered 400 Million Image-Text
+                  Pairs},
+  journal      = {arXiv preprint arXiv:2111.02114},
+  year         = {2021},
+}
+
+@article{yfcc100m,
+   title={YFCC100M: the new data in multimedia research},
+   journal={Communications of the ACM},
+   publisher={Association for Computing Machinery (ACM)},
+   author={Thomee, Bart and Shamma, David A. and Friedland, Gerald and Elizalde, Benjamin and Ni, Karl and Poland, Douglas and Borth, Damian and Li, Li-Jia},
+   year={2016},
+   pages={64--73} }
+
+@article{lenet,
+  author={Lecun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.},
+  journal={Proceedings of the IEEE}, 
+  title={Gradient-based learning applied to document recognition}, 
+  year={1998},
+  pages={2278--2324}
+  }
+
+@inproceedings{resnet,
+  title={Deep Residual Learning for Image Recognition},
+  author={Kaiming He and X. Zhang and Shaoqing Ren and Jian Sun},
+  booktitle={Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2015},
+  pages={770--778}
+}
+
+@article{wideresnet,
+      title={Wide Residual Networks}, 
+      author={Sergey Zagoruyko and Nikos Komodakis},
+      year={2017},
+      journal={arXiv preprint arXiv:1605.07146}
+}
+
+@inproceedings{patchcore,
+  title={Towards Total Recall in Industrial Anomaly Detection},
+  author={Karsten Roth and Latha Pemula and Joaquin Zepeda and Bernhard Scholkopf and Thomas Brox and Peter Gehler},
+  booktitle={Proceedings of the 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2021},
+  pages={14298--14308}
+}
+
+@article{self_supervised_survey,
+  title={A Survey on Self-Supervised Learning: Algorithms, Applications, and Future Trends},
+  author={Jie Gui and Tuo Chen and Jing Zhang and Qiong Cao and Zhe Sun and Haoran Luo and Dacheng Tao},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2023},
+  pages={9052-9071},
+}
+
+@INPROCEEDINGS{dino,
+  author={Caron, Mathilde and Touvron, Hugo and Misra, Ishan and Jegou, Hervé and Mairal, Julien and Bojanowski, Piotr and Joulin, Armand},
+  booktitle={Proceedings of the 2021 IEEE/CVF International Conference on Computer Vision (ICCV)}, 
+  title={Emerging Properties in Self-Supervised Vision Transformers}, 
+  year={2021},
+  pages={9630-9640}
+  }
+
+  @INPROCEEDINGS{realnet,
+  author={Zhang, Ximiao and Xu, Min and Zhou, Xiuzhuang},
+  booktitle={Proceedings of the 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={RealNet: A Feature Selection Network with Realistic Synthetic Anomaly for Anomaly Detection}, 
+  year={2024},
+  pages={16699--16708}
+  }
+
+
+
+@article{uiad_survey,
+   title={A Survey on Unsupervised Anomaly Detection Algorithms for Industrial Images},
+   journal={IEEE Access},
+   publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+   author={Cui, Yajie and Liu, Zhaoxiang and Lian, Shiguo},
+   year={2023},
+   pages={55297--55315} }
+
+@article{pre_trained,
+      title={Feature Selection and Feature Extraction in Pattern Analysis: A Literature Review}, 
+      author={Benyamin Ghojogh and Maria N. Samad and Sayema Asif Mashhadi and Tania Kapoor and Wahab Ali and Fakhri Karray and Mark Crowley},
+      year={2019},
+      journal={arXiv preprint arXiv:1905.02845}
+}
+
+@article{knn,
+ author = {Evelyn Fix and J. L. Hodges},
+ journal = {International Statistical Review / Revue Internationale de Statistique},
+ pages = {238--247},
+ publisher = {[Wiley, International Statistical Institute (ISI)]},
+ title = {Discriminatory Analysis. Nonparametric Discrimination: Consistency Properties},
+ year = {1989}
+}
+
+@article{auroc,
+      title={Attributing AUC-ROC to Analyze Binary Classifier Performance}, 
+      author={Arya Tafvizi and Besim Avci and Mukund Sundararajan},
+      year={2022},
+      journal={arXiv preprint arXiv:2205.11781}
+}
+
+@Inbook{autoencoder,
+author="Bank, Dor and Koenigstein, Noam and Giryes, Raja",
+title="Machine Learning for Data Science Handbook: Data Mining and Knowledge Discovery Handbook",
+year="2023",
+publisher="Springer International Publishing",
+pages="353--374",
+abstract="An autoencoder is a specific type of a neural network, which is mainly designed to encode the input into a compressed and meaningful representation and then decode it back such that the reconstructed input is similar as possible to the original one. This chapter surveys the different types of autoencoders that are mainly used today. It also describes various applications and use-cases of autoencoders.",
+}
+
+@article{unsupervised_survey,
+  title={Semi-Supervised and Unsupervised Deep Visual Learning: A Survey},
+  author={Yanbei Chen and Massimiliano Mancini and Xiatian Zhu and Zeynep Akata},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2022},
+  pages={1327--1347},
+}
+
+@ARTICLE{natural_language,
+  author={Otter, Daniel W. and Medina, Julian R. and Kalita, Jugal K.},
+  journal={IEEE Transactions on Neural Networks and Learning Systems}, 
+  title={A Survey of the Usages of Deep Learning for Natural Language Processing}, 
+  year={2021},
+  pages={604--624}
+  }
+
+@article{contrastive,
+   title={Contrastive Representation Learning: A Framework and Review},
+   journal={IEEE Access},
+   publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+   author={Le-Khac, Phuc H. and Healy, Graham and Smeaton, Alan F.},
+   year={2020},
+   pages={193907--193934} }
+
+@inproceedings{realiad,
+  title={Real-IAD: A Real-World Multi-View Dataset for Benchmarking Versatile Industrial Anomaly Detection},
+  author={Chengjie Wang and Wenbing Zhu and Bin-Bin Gao and Zhenye Gan and Jianning Zhang and Zhihao Gu and Shuguang Qian and Mingang Chen and Lizhuang Ma},
+  booktitle={Proceedings of 2024 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024},
+  pages={22883--22892}
+}
+
+@INPROCEEDINGS{pre_trained_iad,
+  author={Heckler, Lars and König, Rebecca and Bergmann, Paul},
+  booktitle={Proceedings of 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)}, 
+  title={Exploring the Importance of Pretrained Feature Extractors for Unsupervised Anomaly Detection and Localization}, 
+  year={2023},
+  pages={2917--2926}
+  }
+
+@article{vit_contrastive,
+      title={Vision Transformer for Contrastive Clustering}, 
+      author={Hua-Bao Ling and Bowen Zhu and Dong Huang and Ding-Hua Chen and Chang-Dong Wang and Jian-Huang Lai},
+      year={2022},
+      journal={arXiv preprint arXiv:2206.12925}
+}
+
+@article{cnn_survey,
+  title={A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects},
+  author={Zewen Li and Fan Liu and Wenjie Yang and Shouheng Peng and Jun Zhou},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2020},
+  pages={6999--7019}
+}
+
+@inproceedings{batchnorm,
+author = {Ioffe, Sergey and Szegedy, Christian},
+title = {Batch normalization: accelerating deep network training by reducing internal covariate shift},
+year = {2015},
+abstract = {Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization, and in some cases eliminates the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.82\% top-5 test error, exceeding the accuracy of human raters.},
+booktitle = {Proceedings of the 32nd International Conference on International Conference on Machine Learning - Volume 37},
+pages = {448--456},
+series = {ICML'15}
+}
+
+@inproceedings{self_patch,
+  title={Patch-level Representation Learning for Self-supervised Vision Transformers},
+  author={Sukmin Yun and Hankook Lee and Jaehyung Kim and Jinwoo Shin},
+  booktitle={Proceedings of the 2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022},
+  pages={8344--8353}
+}
+
+@inproceedings{glass,
+author = {Chen, Qiyu and Luo, Huiyuan and Lv, Chengkan and Zhang, Zhengtao},
+title = {A Unified Anomaly Synthesis Strategy with Gradient Ascent for Industrial Anomaly Detection and Localization},
+year = {2024},
+publisher = {Springer-Verlag},
+booktitle = {Proceedings of the Computer Vision - ECCV 2024: 18th European Conference, Milan, Italy},
+pages = {37--54}
+}
+
+@misc{llm_survey,
+      title={Large Language Models: A Survey}, 
+      author={Shervin Minaee and Tomas Mikolov and Narjes Nikzad and Meysam Chenaghlu and Richard Socher and Xavier Amatriain and Jianfeng Gao},
+      year={2024},
+      archivePrefix={arXiv preprint arXiv:2402.06196}
+}
+
+@ARTICLE{vlm_survey,
+  author={Zhang, Jingyi and Huang, Jiaxing and Jin, Sheng and Lu, Shijian},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Vision-Language Models for Vision Tasks: A Survey}, 
+  year={2024},
+  pages={5625--5644}
+  }
+
+@INPROCEEDINGS{yolo,
+  author={Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  booktitle={Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+  title={You Only Look Once: Unified, Real-Time Object Detection}, 
+  year={2016},
+  pages={779--788}
+  }
+
+@article{lfw,
+      title={Extended Labeled Faces in-the-Wild (ELFW): Augmenting Classes for Face Segmentation}, 
+      author={Rafael Redondo and Jaume Gibert},
+      year={2020},
+      journal={arXiv preprint arXiv:2006.13980}
+}
+
+@inproceedings{gpt3,
+author = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+title = {Language models are few-shot learners},
+year = {2020},
+publisher = {Curran Associates Inc.},
+booktitle = {Proceedings of the 34th International Conference on Neural Information Processing Systems},
+series = {NIPS '20}
+}
+
+@inproceedings{clip,
+  title={Learning Transferable Visual Models From Natural Language Supervision},
+  author={Alec Radford and Jong Wook Kim and Chris Hallacy and Aditya Ramesh and Gabriel Goh and Sandhini Agarwal and Girish Sastry and Amanda Askell and Pamela Mishkin and Jack Clark and Gretchen Krueger and Ilya Sutskever},
+  booktitle={Proceedings of the International Conference on Machine Learning},
+  year={2021},
+}
+
+@misc{pytorch_resnet_recipe,
+  author = {Vasilis Vryniotis},
+  title = {Pytorch: How to Train State-Of-The-Art Models Using TorchVision's Latest Primitives Web Page},
+  note = {Accessed January 25, 2025},
+  howpublished = {\url{https://pytorch.org/blog/how-to-train-state-of-the-art-models-using-torchvision-latest-primitives/}},
+}
+
+@misc{dino_resnet_recipe,
+  author = {Facebook Research},
+  title = {DINO GitHub web page},
+  note = {Accessed January 25, 2025},
+  howpublished = {\url{https://dl.fbaipublicfiles.com/dino/dino_resnet50_pretrain/args.txt}},
+}
+
+@misc{pytorch_wide,
+  author = {Sergey Zagoruyko},
+  title = {Pytorch WideResNet Web Page},
+  note = {Accessed January 25, 2025},
+  howpublished = {\url{https://pytorch.org/hub/pytorch_vision_wide_resnet/}},
 }

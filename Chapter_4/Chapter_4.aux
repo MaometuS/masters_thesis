@@ -1,51 +1,79 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experiments, Results and Implementation}{33}{}\protected@file@percent }
+\citation{vit}
+\citation{dino}
+\citation{patchcore}
+\citation{wideresnet}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Experiments, Results and Implementation}{31}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chapter:ch4}{{4}{33}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Scoring methodology}{34}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Scoring metric}{34}{}\protected@file@percent }
-\newlabel{eq:tpr}{{4.1}{34}{}{}{}}
-\newlabel{eq:fpr}{{4.2}{34}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces AUROC score is a area under ROC curve represented as a relationship of TPR and FPR.}}{35}{}\protected@file@percent }
-\newlabel{fig:auroc}{{4.1}{35}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Industrial Anomaly detection model}{35}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Comparison of ViT layers}{36}{}\protected@file@percent }
-\newlabel{vit layers}{{4.2}{36}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor.}}{37}{}\protected@file@percent }
-\newlabel{fig:vit_layers}{{4.2}{37}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Superiority of WideResNet50 over ResNet50}{37}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of different layers of VitB/16 model across all categories.}}{38}{}\protected@file@percent }
-\newlabel{fig:resnet_vs_wideresnet}{{4.3}{38}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Analysis on the efficieny of DINO model}{38}{}\protected@file@percent }
-\newlabel{sec:dino_tests}{{4.4}{38}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of ResNet50 pre-trained with supervised learning and ResNet50 trained with DINO self-supervised model across all categories.}}{41}{}\protected@file@percent }
-\newlabel{fig:dino_test}{{4.4}{41}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.5}CNN bi-class classifier selective extraction experiments}{41}{}\protected@file@percent }
-\newlabel{sec:comp_vis}{{4.5}{41}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Training the CNN bi-class classifier}{41}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces The detailed explanation of the assembly of the dataset for the training of bi-class classifier.}}{42}{}\protected@file@percent }
-\newlabel{fig:bi_class_prep}{{4.5}{42}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Selective extraction of the dataset for feature learning}{43}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Learning features using DINO VitB/16 model}{44}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Learning features using DINO self-supervised method with the WideResNet50 model}{45}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{46}{}\protected@file@percent }
-\newlabel{fig:vit_custom_test}{{4.6}{46}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Instance AUROC scores across 15 objects in MVTecAD dataset.}}{48}{}\protected@file@percent }
-\newlabel{fig:wd_instance}{{4.7}{48}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Full Pixel AUROC scores across 15 objects in MVTecAD dataset.}}{48}{}\protected@file@percent }
-\newlabel{fig:wd_full_pixel}{{4.8}{48}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Anaomaly Pixel AUROC scores across 15 objects in MVTecAD.}}{49}{}\protected@file@percent }
-\newlabel{fig:wd_anomaly}{{4.9}{49}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{50}{}\protected@file@percent }
-\newlabel{fig:wd_mean}{{4.10}{50}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.6}Selective extraction with LLM and VLM}{51}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{52}{}\protected@file@percent }
-\newlabel{fig:llm_clip_mean}{{4.11}{52}{}{}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Numbers of keywords and descriptions generated for each object in the MVTecAD dataset.}}{54}{}\protected@file@percent }
-\newlabel{tab:gpt_keywords}{{4.1}{54}{}{}{}}
+\newlabel{chapter:ch4}{{4}{31}{}{}{}}
+\citation{auroc}
+\citation{auroc}
+\citation{auroc}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Scoring methodology}{32}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Scoring metric}{32}{}\protected@file@percent }
+\newlabel{eq:tpr}{{4.1}{32}{}{}{}}
+\citation{auroc}
+\citation{auroc}
+\citation{mvtecad}
+\citation{patchcore}
+\citation{patchcore}
+\citation{patchcore}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces AUROC score is a area under ROC curve represented as a relationship of TPR and FPR.\cite  {auroc}}}{33}{}\protected@file@percent }
+\newlabel{fig:auroc}{{4.1}{33}{}{}{}}
+\newlabel{eq:fpr}{{4.2}{33}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Industrial Anomaly detection model}{33}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Comparison of ViT layers}{34}{}\protected@file@percent }
+\newlabel{vit layers}{{4.2}{34}{}{}{}}
+\citation{wideresnet}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Mean Instance AUROC score across all categories of MVTechAd for PatchCore with VitB/16 pre-trained extractor.}}{35}{}\protected@file@percent }
+\newlabel{fig:vit_layers}{{4.2}{35}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Superiority of WideResNet50 over ResNet50}{35}{}\protected@file@percent }
+\citation{resnet}
+\citation{imagenet}
+\citation{pytorch_resnet_recipe}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of different layers of VitB/16 model across all categories.}}{36}{}\protected@file@percent }
+\newlabel{fig:resnet_vs_wideresnet}{{4.3}{36}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Analysis on the efficieny of DINO model}{36}{}\protected@file@percent }
+\newlabel{sec:dino_tests}{{4.4}{36}{}{}{}}
+\citation{dino_resnet_recipe}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of mean Instance AUROC, Full Pixel AUROC and Anomaly AUROC scores of ResNet50 pre-trained with supervised learning and ResNet50 trained with DINO self-supervised model across all categories.}}{39}{}\protected@file@percent }
+\newlabel{fig:dino_test}{{4.4}{39}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}CNN bi-class classifier selective extraction experiments}{39}{}\protected@file@percent }
+\newlabel{sec:comp_vis}{{4.5}{39}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.1}Training the CNN bi-class classifier}{39}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces The detailed explanation of the assembly of the dataset for the training of bi-class classifier.}}{40}{}\protected@file@percent }
+\newlabel{fig:bi_class_prep}{{4.5}{40}{}{}{}}
+\citation{yfcc100m}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.2}Selective extraction of the dataset for feature learning}{41}{}\protected@file@percent }
+\citation{vit}
+\citation{dino}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.3}Learning features using DINO VitB/16 model}{42}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5.4}Learning features using DINO self-supervised method with the WideResNet50 model}{43}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{44}{}\protected@file@percent }
+\newlabel{fig:vit_custom_test}{{4.6}{44}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Instance AUROC scores across 15 objects in MVTecAD dataset.}}{46}{}\protected@file@percent }
+\newlabel{fig:wd_instance}{{4.7}{46}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Full Pixel AUROC scores across 15 objects in MVTecAD dataset.}}{46}{}\protected@file@percent }
+\newlabel{fig:wd_full_pixel}{{4.8}{46}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Anomaly Pixel AUROC scores across 15 objects in MVTecAD.}}{47}{}\protected@file@percent }
+\newlabel{fig:wd_anomaly}{{4.9}{47}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{48}{}\protected@file@percent }
+\newlabel{fig:wd_mean}{{4.10}{48}{}{}{}}
+\citation{llm_survey}
+\citation{vlm_survey}
+\citation{gpt3}
+\citation{clip}
+\citation{mvtecad}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}Selective extraction with LLM and VLM}{49}{}\protected@file@percent }
+\citation{mvtecad}
+\citation{mvtecad}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Numbers of keywords and descriptions generated for each object in the MVTecAD\cite  {mvtecad} dataset.}}{50}{}\protected@file@percent }
+\newlabel{tab:gpt_keywords}{{4.1}{50}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Mean scores Instance AUROC, Full Pixel AUROC and Anomaly Pixel AUROC across all categories of MVTechAd dataset}}{51}{}\protected@file@percent }
+\newlabel{fig:llm_clip_mean}{{4.11}{51}{}{}{}}
 \@setckpt{Chapter_4/Chapter_4}{
-\setcounter{page}{55}
+\setcounter{page}{52}
 \setcounter{equation}{2}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
